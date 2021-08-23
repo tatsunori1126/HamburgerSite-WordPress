@@ -1,0 +1,22 @@
+@charset "UTF-8";
+.header {
+    background-color: #FFF7EF;
+    height: 217px;
+}
+h1 {
+    font-size: 64px;
+    font-family: Roboto;
+    color: #707070;
+}
+
+input　{
+    font-family: "Font Awesome 5 Free";
+    content: "\f002";
+    color: black;
+    font-weight: 900;
+}
+input .search-btn {
+    font-family: M+ 1m;
+    font-weight: bold;
+    padding: 12px 52px;
+}

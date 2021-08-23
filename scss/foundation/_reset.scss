@@ -1,0 +1,509 @@
+@charset "UTF-8";
+body {
+  height: 2000px;
+  line-height: 1.7;
+  font-family: "Noto Sans JP",MyYuGothicM,YuGothic,-apple-system,BlinkMacSystemFont,"Hiragino kaku Gothic ProN",Meiryo,Verdana,arial,helvetica,sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  background-color: #FFFFFF;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  margin-left: 21px;
+}
+
+.header-left img {
+  height: 33px;
+  width: auto;
+}
+
+.header-left .main-title {
+  color: #131D34;
+  font-weight: 900;
+  font-size: 14px;
+  margin-left: 16px;
+  text-decoration: none;
+  line-height: 1.3;
+}
+
+.header-left span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.header-right .nuv {
+  display: flex;
+  align-items: center;
+}
+
+.header-right .nuv li {
+  list-style-type: none;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.header-right .nuv li .sub {
+  position: absolute;
+  display: none;
+  z-index: 10;
+}
+
+.header-right .nuv li .sub li a {
+  background-color: #e9f8fb;
+  font-weight: 400;
+}
+
+.header-right .nuv li .sub li a:hover {
+  color: #2498b3;
+  background-color: #FFFFFF;
+}
+
+.header-right .nuv li a {
+  text-decoration: none;
+  color: #131D34;
+  padding: 0 15px;
+  height: 70px;
+  display: block;
+  line-height: 70px;
+}
+
+.header-right .nuv li .menu-btn {
+  position: relative;
+  transition: 0.3s;
+}
+
+.header-right .nuv li .menu-btn:hover {
+  color: #131d34;
+  background-color: #d4f1f8;
+}
+
+.header-right .nuv li .sub-btn {
+  color: #FFFFFF;
+  background-color: #2498B3;
+}
+
+.tophead {
+  background-image: url(../images/bg-hero3.png);
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 650px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tophead-layer {
+  text-align: center;
+  background-image: url(../images/bg-hero1.png), url(../images/bg-hero2.png);
+  width: 100%;
+  height: 650px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tophead-layer .tophead-body {
+  display: inline-block;
+  max-width: 415px;
+  margin: 80px auto 0;
+  padding: 43px 40px 19px;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+}
+
+.tophead-layer .tophead-body img {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.tophead-layer .tophead-body p {
+  margin: 1.3em 0 0.5em;
+  font-weight: bold;
+}
+
+.tophead-layer .tophead-body a {
+  display: inline-block;
+  padding: 24px 37px;
+  text-decoration: none;
+  background-color: #2498B3;
+  color: #FFFFFF;
+  font-weight: bold;
+  border-radius: 4px;
+  line-height: 1;
+  margin: 1.3em 0 0.5em;
+  font-size: 18px;
+}
+
+.back {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 230px;
+  background-color: #000;
+}
+
+.back .recommendation {
+  position: absolute;
+  top: -200px;
+  display: flex;
+  justify-content: center;
+  max-width: 1078px;
+}
+
+.back .recommendation .introduction {
+  text-align: center;
+  width: 229px;
+  margin: 0 50px;
+}
+
+.back .recommendation .introduction .circle {
+  width: 230px;
+  height: 230px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  border: 6px solid #000;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back .recommendation .introduction .circle .fa-dumbbell {
+  font-family: "Font Awesome 5 Free";
+  content: "\f44b";
+  font-weight: 900;
+  color: #000;
+  font-size: 100px;
+}
+
+.back .recommendation .introduction .circle .fa-chart-line {
+  font-family: "Font Awesome 5 Free";
+  content: "\f201";
+  font-weight: 900;
+  color: #000;
+  font-size: 100px;
+}
+
+.back .recommendation .introduction .circle .fa-life-ring {
+  font-family: "Font Awesome 5 Free";
+  content: "\f1cd";
+  font-weight: 900;
+  color: #000;
+  font-size: 100px;
+}
+
+.back .recommendation .introduction p {
+  font-size: 24px;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-top: 0.2em;
+}
+
+.back .recommendation .introduction .explanation {
+  text-align: left;
+  margin: 0.5em auto 0;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+@media (min-width: 1201px) and (max-width: 1280px) {
+  .main-title {
+    display: none;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1260px) {
+  .header-right ul li .menu-btn {
+    padding: 0 10px;
+  }
+  .header-right ul li .sub-btn {
+    padding: 0 10px;
+  }
+}
+
+@media (min-width: 1201px) {
+  body {
+    padding-top: 70px;
+  }
+  .header .c-button {
+    display: none;
+  }
+}
+
+@media (max-width: 1078px) {
+  .back .recommendation .introduction {
+    width: 29.33%;
+    margin: 0 2%;
+  }
+}
+
+@media (max-width: 1200px) {
+  body {
+    padding-top: 50px;
+  }
+  .header {
+    height: 50px;
+  }
+  .header-left .main-logo img {
+    height: 30px;
+  }
+  .header-left .main-title {
+    display: none;
+  }
+  .header-right .nuv {
+    display: none;
+  }
+  .hamburger {
+    position: absolute;
+    top: 50px;
+    background-color: #FFFFFF;
+    width: 100%;
+    z-index: 100;
+    cursor: pointer;
+  }
+  .hamburger .hamburger-nuv {
+    font-weight: bold;
+  }
+  .hamburger .hamburger-nuv .hamburger-sub-nuv {
+    font-weight: normal;
+  }
+  .hamburger .hamburger-nuv .hamburger-sub-nuv li a {
+    padding: 10px 10px 10px 25px;
+  }
+  .hamburger .hamburger-nuv a {
+    padding: 10px;
+    color: #131D34;
+    text-decoration: none;
+    height: auto;
+    display: block;
+  }
+  .hamburger .ac-parent {
+    position: relative;
+    color: #fff;
+    cursor: pointer;
+  }
+  .hamburger {
+    display: none;
+  }
+  /* ①プラスの横線 */
+  .ac-parent:before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 23px;
+    right: 13px;
+    width: 24px;
+    height: 2px;
+    margin-top: -1px;
+    background: #121212;
+    z-index: 9;
+  }
+  /* ②プラスの縦線 */
+  .ac-parent:after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 23px;
+    right: 24px;
+    width: 2px;
+    height: 24px;
+    margin-top: -12px;
+    background: #121212;
+  }
+  /* ③オープン時にopenクラスを付与（縦線を回転させて非表示に） */
+  .ac-parent.open:after {
+    top: 25%;
+    opacity: 0;
+    transform: rotate(90deg);
+  }
+}
+
+@media (max-width: 767px) {
+  .tophead {
+    height: 300px;
+    background-position: center -25px;
+  }
+  .tophead-layer {
+    height: 300px;
+    background-size: cover;
+    background-position: center -30px, center -25px;
+  }
+  .tophead .tophead-layer .tophead-body {
+    width: 100%;
+    max-width: 100%;
+    padding: 9px 0 13px;
+    margin-top: 165px;
+    border-radius: 0;
+  }
+  .tophead .tophead-layer .tophead-body p {
+    font-size: 13px;
+    margin: 0.5em 0;
+  }
+  .tophead .tophead-layer .tophead-body img {
+    display: none;
+  }
+  .tophead .tophead-layer .tophead-body a {
+    padding: 12px 18px;
+    margin: 0.5em 0;
+    font-size: 16px;
+  }
+  .back {
+    position: static;
+    height: auto;
+    padding: 4em 0 2em;
+  }
+  .back .recommendation {
+    position: static;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .back .recommendation .introduction {
+    width: auto;
+    margin: 0 2% 40px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::before, ::after {
+  box-sizing: inherit;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: inherit;
+  vertical-align: middle;
+  text-align: inherit;
+  font: inherit;
+  appearance: none;
+}
+
+/**************** 以下、ハンバーガーボタンのスタイリング ****************/
+.c-button {
+  position: absolute;
+  display: inline-block;
+  text-decoration: none;
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.p-hamburger {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  box-shadow: 0 0 2rem transparent;
+  outline: none;
+  transition: all .1s ease-in-out;
+}
+
+.p-hamburger__line {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 22px;
+  height: 2px;
+  background-color: #2498b3;
+  transition: inherit;
+}
+
+.p-hamburger__line::before,
+.p-hamburger__line::after {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  content: '';
+  transition: inherit;
+}
+
+.p-hamburger__line::before {
+  top: -9px;
+}
+
+.p-hamburger__line::after {
+  top: 9px;
+}
+
+.p-hamburger[aria-expanded="true"] .p-hamburger__line {
+  background-color: transparent;
+}
+
+.p-hamburger[aria-expanded="true"] .p-hamburger__line::before,
+.p-hamburger[aria-expanded="true"] .p-hamburger__line::after {
+  top: 0;
+  background-color: #FFFFFF;
+}
+
+.p-hamburger[aria-expanded="true"] .p-hamburger__line::before {
+  transform: rotate(45deg);
+}
+
+.p-hamburger[aria-expanded="true"] .p-hamburger__line::after {
+  transform: rotate(-45deg);
+}
+
+.u-visuallyHidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/**************** ここまで、ハンバーガーボタンのスタイリング ****************/
+.hamburger-sub-nuv {
+  display: none;
+}
+
+.hamburger a:hover {
+  background-color: #f3fafb;
+}
+
+.bg-change {
+  background-color: #2498b3;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+a:link {
+  transition: 0.5s;
+}
+/*# sourceMappingURL=style.css.map */
