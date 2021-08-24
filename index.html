@@ -10,13 +10,94 @@
 
 </head>
 <body>
-    <header class="header">
-        <h1>Hamburger</h1>
-        <form action="#" method="post">
-            <input type="search" class="l-label" placeholder="&#xf002">
-            <input type="submit" class="search-btn" value="検索">
-        </form>
-    </header>
-    
+    <div class="l-container">
+        <!-- ヘッダー -->
+        <header class="header">
+            <h1>Hamburger</h1>
+            <!-- 検索フォーム -->
+            <form action="#">
+                <input type="search" name="search" class="p-search-form__keyword" placeholder="&#xf002;">
+                <input type="submit" class="p-search-form__submit" value="検索">
+            </form>
+        </header>
+        <!-- サイドバー -->
+        <article class="l-sidebar">
+            <h2>Menu</h2>
+            <!-- バーガー -->
+            <div class="l-sidebar__burger">
+                <h3 class="l-burger">バーガー</h3>
+                <ul>
+                    <li>ハンバーガー</li>
+                    <li>チーズバーガー</li>
+                    <li>テリヤキバーガー</li>
+                    <li>アボカドバーガー</li>
+                    <li>フィッシュバーガー</li>
+                    <li>ベーコンバーガー</li>
+                    <li>チキンバーガー</li>
+                </ul>
+            </div>
+            <!-- サイド -->
+            <div class="l-sidebar__side">
+                <h3 class="l-side">サイド</h3>
+                <ul>
+                    <li>ポテト</li>
+                    <li>サラダ</li>
+                    <li>ナゲット</li>
+                    <li>コーン</li>
+                </ul>
+            </div>
+            <!-- ドリンク -->
+            <div class="l-sidebar__drink">
+                <h3 class="l-drink">ドリンク</h3>
+                <ul>
+                    <li>コーラ</li>
+                    <li>ファンタ</li>
+                    <li>オレンジ</li>
+                    <li>アップル</li>
+                    <li>紅茶（Ice/Hot）</li>
+                    <li>コーヒー（Ice/Hot）</li>
+                </ul>
+            </div>
+        </article>
+        <!-- メイン -->
+        <div class="main">
+            <!-- トップ -->
+            <div class="top-header">
+                <img src="images/front-page_top_img.png" alt="トップ画像">
+            </div>
+            <div class="branch-menu">
+                <ul>
+                    <li class="take-out">
+                        <h2>Take Out</h2>
+                        <dl>
+                            <dt>Take OUT</dt>
+                            <dd>当店のテイクアウトで利用できる商品を掲載しています</dd>
+                        </dl>
+                        <dl>
+                            <dt>Take OUT</dt>
+                            <dd>当店のテイクアウトで利用できる商品を掲載しています</dd>
+                        </dl>
+                    </li>
+                    <li class="eat-in">
+                        <h2>Eat In</h2>
+                        <dl>
+                            <dt>Eat IN</dt>
+                            <dd>当店のテイクアウトで利用できる商品を掲載しています</dd>
+                        </dl>
+                        <dl>
+                            <dt>Eat IN</dt>
+                            <dd>当店のテイクアウトで利用できる商品を掲載しています</dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <footer class="l-footer">
+            <div class="l-footer__menu">
+                ショップ情報｜ヒストリー
+            </div>
+            <p class="copyright">Copyright: RaiseTech</p>
+        </footer>
+    </div>
 </body>
 </html>
