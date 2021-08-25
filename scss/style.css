@@ -90,6 +90,10 @@ body {
   font-family: M1m;
 }
 
+body {
+  background-color: #F2EDE9;
+}
+
 /* ==========================================================================
    Layout
    ========================================================================== */
@@ -126,10 +130,11 @@ footer {
   justify-content: space-between;
 }
 
-h1 {
+h1 a {
   font-size: 64px;
   font-family: Roboto;
   color: #707070;
+  text-decoration: none;
 }
 
 .p-search-form__keyword {
@@ -153,12 +158,25 @@ h1 {
   height: 46px;
   border-radius: 10px;
   border: 1px solid #707070;
+  cursor: pointer;
 }
 
-.top-header img {
+.main {
+  background-color: #FFFFFF;
+}
+
+.top-header {
+  background-image: url(/images/front-page_top_img.png);
   width: 100%;
   height: 530px;
-  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.top-header h2 {
+  font-size: 40px;
+  font-weight: bold;
 }
 
 .branch-menu {
@@ -173,21 +191,103 @@ h1 {
 .branch-menu ul .take-out {
   background-image: url(/images/front-page_main_img01.png);
   background-repeat: no-repeat;
+  background-position: center;
   height: 1200px;
+  width: 40%;
 }
 
 .branch-menu ul .take-out h2 {
   color: #EAEAEA;
+  font-size: 80px;
+  font-family: Roboto;
+}
+
+.branch-menu ul .take-out dl {
+  background-color: #FFFFFF;
+  opacity: 0.8;
+  width: 90%;
+}
+
+.branch-menu ul .take-out dl dt {
+  font-size: 24px;
+  font-weight: bold;
+  color: #3C2A10;
+}
+
+.branch-menu ul .take-out dl dd {
+  color: #3C2A10;
 }
 
 .branch-menu ul .eat-in {
   background-image: url(/images/front-page_main_img02.png);
   background-repeat: no-repeat;
+  background-position: center;
   height: 1200px;
+  width: 40%;
 }
 
 .branch-menu ul .eat-in h2 {
   color: #EAEAEA;
+  font-size: 80px;
+  font-family: Roboto;
+}
+
+.branch-menu ul .eat-in dl {
+  background-color: #FFFFFF;
+  opacity: 0.8;
+  width: 90%;
+}
+
+.branch-menu ul .eat-in dl dt {
+  font-size: 24px;
+  font-weight: bold;
+  color: #3C2A10;
+}
+
+.branch-menu ul .eat-in dl dd {
+  color: #3C2A10;
+}
+
+.access {
+  background-color: black;
+  width: 100%;
+  height: 650px;
+}
+
+.access .l-bg-image {
+  background-image: url(/images/front-page_screenshot.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 650px;
+}
+
+.access .l-bg-image .l-bg-mask {
+  height: 100%;
+  background: rgba(255, 255, 255, 0);
+}
+
+.access .l-bg-image .l-bg-mask .l-text-back {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 650px;
+  width: 60%;
+}
+
+.access .l-bg-image .l-bg-mask .l-text-back .l-text {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.access .l-bg-image .l-bg-mask .l-text-back .l-text h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.access .l-bg-image .l-bg-mask .l-text-back .l-text p {
+  font-weight: bold;
+  color: #FFFFFF;
+  line-height: 2;
 }
 
 .l-sidebar h2 {
@@ -201,9 +301,10 @@ h1 {
   color: #707070;
 }
 
-.l-sidebar ul li {
+.l-sidebar ul li a {
   font-size: 20px;
   color: #707070;
+  text-decoration: none;
 }
 
 .l-footer {
@@ -239,12 +340,60 @@ h1 {
 
 .l-sidebar h2 {
   margin-top: 82px;
-  margin-left: 46px;
+  margin-left: 45px;
   margin-bottom: 85px;
+}
+
+.l-sidebar__burger, .l-sidebar__side, .l-sidebar__drink {
+  margin-left: 45px;
+}
+
+.l-sidebar__burger .l-burger, .l-sidebar__burger .l-side, .l-sidebar__burger .l-drink, .l-sidebar__side .l-burger, .l-sidebar__side .l-side, .l-sidebar__side .l-drink, .l-sidebar__drink .l-burger, .l-sidebar__drink .l-side, .l-sidebar__drink .l-drink {
+  margin-bottom: 40px;
+}
+
+.l-sidebar__burger ul, .l-sidebar__side ul, .l-sidebar__drink ul {
+  margin-left: 20px;
+}
+
+.l-sidebar__burger ul li, .l-sidebar__side ul li, .l-sidebar__drink ul li {
+  margin-bottom: 23px;
+}
+
+.l-sidebar__burger ul li:last-child, .l-sidebar__side ul li:last-child, .l-sidebar__drink ul li:last-child {
+  margin-bottom: 40px;
 }
 
 .l-footer__menu {
   margin-top: 40px;
   margin-bottom: 35px;
+}
+
+form {
+  margin-top: 85px;
+  margin-right: 30px;
+}
+
+h1 {
+  margin: 55px 0 0 65px;
+}
+
+.take-out {
+  margin-top: 120px;
+}
+
+.take-out dl {
+  margin-bottom: 50px;
+  margin: 0 auto;
+}
+
+.eat-in {
+  margin-left: 80px;
+  margin-top: 120px;
+}
+
+.eat-in dl {
+  margin-bottom: 50px;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=style.css.map */

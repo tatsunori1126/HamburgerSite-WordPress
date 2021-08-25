@@ -5,8 +5,23 @@
 .l-sidebar {
     h2 {
        margin-top: 82px;
-       margin-left: 46px;
+       margin-left: 45px;
        margin-bottom: 85px; 
+    }
+    &__burger, &__side, &__drink {
+        margin-left: 45px;
+        .l-burger, .l-side, .l-drink {
+            margin-bottom: 40px;
+        }
+        ul {
+            margin-left: 20px;
+            li {
+                margin-bottom: 23px;
+            }
+            li:last-child {
+                margin-bottom: 40px;
+            }
+        }
     }
 }
 
@@ -15,3 +30,27 @@
     margin-bottom: 35px;
 }
 
+form {
+    margin-top: 85px;
+    margin-right: 30px;
+}
+
+h1 {
+    margin: 55px 0 0 65px;
+}
+
+.take-out {
+    margin-top: 120px;
+    dl {
+        margin-bottom: 50px;
+        margin: 0 auto;
+    }
+}
+.eat-in {
+    margin-left: 80px;
+    margin-top: 120px;
+    dl {
+        margin-bottom: 50px;
+        margin: 0 auto;
+    }
+}
