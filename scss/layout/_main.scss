@@ -11,6 +11,7 @@
     h2 {
         font-size: 40px;
         font-weight: bold;
+        color: #FFFFFF;
     }
 }
 
@@ -29,11 +30,23 @@
                 color: #EAEAEA;
                 font-size: 80px;
                 font-family: Roboto;
+                position: relative;
             }
-            dl {
+            h2::before {
+                content: "";
+                display: block;
+                width: 63px;
+                height: 4px;
+                background-color: #FFFFFF;
+                position: absolute;
+                top: 150px;
+                left: 0;
+            }            
+            &__section1, &__section2 {
                 background-color: #FFFFFF;
                 opacity: 0.8;
                 width: 90%;
+                height: 175px;
                 dt {
                     font-size: 24px;
                     font-weight: bold;
@@ -54,11 +67,23 @@
                 color: #EAEAEA;
                 font-size: 80px;
                 font-family: Roboto;
+                position: relative;
             }
-            dl {
+            h2::before {
+                content: "";
+                display: block;
+                width: 63px;
+                height: 4px;
+                background-color: #FFFFFF;
+                position: absolute;
+                top: 150px;
+                left: 0;
+            }        
+            &__section1, &__section2 {
                 background-color: #FFFFFF;
                 opacity: 0.8;
                 width: 90%;
+                height: 175px;
                 dt {
                     font-size: 24px;
                     font-weight: bold;
@@ -81,9 +106,10 @@
         background-position: center;
         width: 100%;
         height: 650px;
-        .l-bg-mask {
-            height: 100%;
-            background: rgba(255,255,255,0);
+        opacity: 0.6;
+        // .l-bg-mask {
+            // height: 100%;
+            // background: rgba(255,255,255,0);
             .l-text-back {
                 background-color: rgba(0, 0, 0, 0.3);
                 height: 650px;
@@ -95,7 +121,19 @@
                         font-size: 36px;
                         font-weight: bold;
                         color: #FFFFFF;
+                        position: relative;
                     }
+                    h2::before {
+                        content: "";
+                        display: block;
+                        width: 75px;
+                        height: 2px;
+                        background-color: #FFFFFF;
+                        position: absolute;
+                        top: 110px;
+                        left: 0;
+                    }        
+        
                     p {
                         font-weight: bold;
                         color: #FFFFFF;
@@ -103,6 +141,6 @@
                     }
                 }
             }
-        }
+        // }
     }
 }

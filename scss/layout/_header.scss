@@ -12,6 +12,7 @@ h1 a {
     text-decoration: none;
 }
 .p-search-form__keyword {
+    padding-left: 10px;
     display: inline-block;
     font-family: "Font Awesome 5 Free";
     color: black;
@@ -25,6 +26,8 @@ h1 a {
 }
 .p-search-form__submit {
     display: inline-block;
+    position: relative;
+    top: -2px;
     font-family: M+ 1m;
     font-weight: bold;
     padding: 12px 52px;

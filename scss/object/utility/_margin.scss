@@ -25,6 +25,7 @@
     }
 }
 
+
 .l-footer__menu {
     margin-top: 40px;
     margin-bottom: 35px;
@@ -41,16 +42,32 @@ h1 {
 
 .take-out {
     margin-top: 120px;
-    dl {
-        margin-bottom: 50px;
-        margin: 0 auto;
+    h2 {
+        margin: 15px 0 0 20px;
+    }
+    &__section1 {
+        margin: 670px auto 20px ;
+    }
+    &__section2 {
+        margin: 0 auto ;
     }
 }
 .eat-in {
     margin-left: 80px;
     margin-top: 120px;
-    dl {
-        margin-bottom: 50px;
-        margin: 0 auto;
+    h2 {
+        margin: 15px 0 0 20px;
+    }
+    &__section1 {
+        margin: 670px auto 20px;
+    }
+    &__section2 {
+        margin: 0 auto ;
     }
 }
+
+.l-text {
+    h2 {
+        margin-bottom: 120px;
+    }
+} 
