@@ -293,25 +293,31 @@ h1 a {
   opacity: 0.6;
 }
 
-.access .l-bg-image .l-text-back {
-  background-color: rgba(0, 0, 0, 0.3);
+.access .l-bg-image .l-bg-mask {
+  height: 100%;
+  background: rgba(255, 255, 255, 0);
+}
+
+.access .l-bg-image .l-bg-mask .l-text-back {
+  background-color: #000000;
+  opacity: 0.3;
   height: 650px;
   width: 60%;
 }
 
-.access .l-bg-image .l-text-back .l-text {
+.access .l-bg-image .l-bg-mask .l-text-back .l-text {
   width: 80%;
   margin: 0 auto;
 }
 
-.access .l-bg-image .l-text-back .l-text h2 {
+.access .l-bg-image .l-bg-mask .l-text-back .l-text h2 {
   font-size: 36px;
   font-weight: bold;
   color: #FFFFFF;
   position: relative;
 }
 
-.access .l-bg-image .l-text-back .l-text h2::before {
+.access .l-bg-image .l-bg-mask .l-text-back .l-text h2::before {
   content: "";
   display: block;
   width: 75px;
@@ -322,7 +328,7 @@ h1 a {
   left: 0;
 }
 
-.access .l-bg-image .l-text-back .l-text p {
+.access .l-bg-image .l-bg-mask .l-text-back .l-text p {
   font-weight: bold;
   color: #FFFFFF;
   line-height: 2;
@@ -350,7 +356,7 @@ h1 a {
   width: 100%;
   text-align: center;
   margin: 0 auto;
-  background-color: #9D8670;
+  background-image: url(/images/footer_img.png);
 }
 
 .l-footer__menu {
