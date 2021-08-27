@@ -6,9 +6,12 @@
     top: -2px;
     font-family: M+ 1m;
     font-weight: bold;
-    padding: 12px 52px;
     height: 46px;
     border-radius: 10px;
     border: 1px solid #707070;
     cursor: pointer;
+    padding: 12px 23px;
+    @include pc {
+        padding: 12px 52px;
+    }
 }

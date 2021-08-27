@@ -4,16 +4,28 @@
 .l-top-header {
     // トップ画像見出し
     h2 {
-        padding: 230px 0 0 85px;
+        padding-left: 25px;
+        @include tab {
+            padding-left: 85px;
+        }
     }
 }
 // テイクアウト、イートイン説明文見出し
 .l-take-out dt, .l-eat-in dt {
-    padding: 20px 0 0 20px;
+    padding: 20px 0 0 10px;
+    @include pc {
+        padding: 20px 0 0 20px;
+    }
 }
 // テイクアウト、イートイン説明文
 .l-take-out dd, .l-eat-in dd {
-    padding: 23px 0 0 20px;
+    padding: 23px 0 0 10px;
+    @include pc {
+        padding: 23px 0 0 20px;
+    }
 }
 
-
+// フッター
+.l-footer__menu {
+    padding: 40px 0 35px;
+}
