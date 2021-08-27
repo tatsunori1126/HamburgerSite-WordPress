@@ -1,0 +1,14 @@
+@charset "UTF-8";
+// ヘッダー部検索ボタン
+.c-search-form__submit {
+    display: inline-block;
+    position: relative;
+    top: -2px;
+    font-family: M+ 1m;
+    font-weight: bold;
+    padding: 12px 52px;
+    height: 46px;
+    border-radius: 10px;
+    border: 1px solid #707070;
+    cursor: pointer;
+}

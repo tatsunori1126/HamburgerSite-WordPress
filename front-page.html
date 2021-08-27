@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ハンバーガーサイト</title>
+    <title>HamburgerSite</title>
     <link rel="stylesheet" href="/scss/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css" rel="stylesheet">
 
@@ -12,12 +12,12 @@
 <body>
     <div class="l-container">
         <!-- ヘッダー -->
-        <header class="header">
+        <header class="l-header">
             <h1><a href="front-page.html">Hamburger</a></h1>
             <!-- 検索フォーム -->
             <form action="#">
-                <input type="search" name="search" class="p-search-form__keyword" placeholder="&#xf002;">
-                <input type="submit" class="p-search-form__submit" value="検索">
+                <input type="search" name="search" class="c-search-form__keyword" placeholder="&#xf002;">
+                <input type="submit" class="c-search-form__submit" value="検索">
             </form>
         </header>
         <!-- サイドバー -->
@@ -60,54 +60,60 @@
             </div>
         </article>
         <!-- メイン -->
-        <div class="main">
-            <!-- トップ -->
-            <div class="top-header">
-                <h2>ダミーサイト</h2>
+        <div class="l-main">
+            <div class="l-top-header">  <!-- トップ画像 -->
+                <h2>ダミーサイト</h2>   <!-- トップ画像見出し -->
             </div>
-            <div class="branch-menu">
+            <!-- ブランチメニュー -->
+            <div class="l-branch-menu">
                 <ul>
-                    <li class="take-out">
-                        <h2>Take Out</h2>
-                        <dl class="take-out__section1">
+                    <!-- テイクアウト -->
+                    <li class="l-take-out">
+                        <h2>Take Out</h2>   <!-- テイクアウト見出し -->
+                        <!-- テイクアウト説明文1 -->
+                        <dl class="l-take-out__section1">
                             <dt>Take OUT</dt>
                             <dd>当店のテイクアウトで利用できる商品を掲載しています</dd>
                         </dl>
-                        <dl class="take-out__section2">
+                        <!-- テイクアウト説明文2 -->
+                        <dl class="l-take-out__section2">
                             <dt>Take OUT</dt>
                             <dd>当店のテイクアウトで利用できる商品を掲載しています</dd>
                         </dl>
                     </li>
-                    <li class="eat-in">
-                        <h2>Eat In</h2>
-                        <dl class="eat-in__section1">
+                    <!-- イートイン -->
+                    <li class="l-eat-in">
+                        <h2>Eat In</h2> <!-- イートイン見出し -->
+                        <!-- イートイン説明文1 -->
+                        <dl class="l-eat-in__section1">
                             <dt>Eat IN</dt>
                             <dd>当店のテイクアウトで利用できる商品を掲載しています</dd>
                         </dl>
-                        <dl class="eat-in__section2">
+                        <!-- イートイン説明文2 -->
+                        <dl class="l-eat-in__section2">
                             <dt>Eat IN</dt>
                             <dd>当店のテイクアウトで利用できる商品を掲載しています</dd>
                         </dl>
                     </li>
                 </ul>
             </div>
-            <section class="access">
-                <div class="l-bg-image">
-                    <div class="l-bg-mask">
-                        <div class="l-text-back">
-                            <div class="l-text">
-                                <h2>見出しが入ります</h2>
-                                <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                            </div>
-                        </div>
-                    </div>
+            <!-- アクセス -->
+            <section class="l-access">  <!-- 最背面の黒色の背景色 -->
+                <div class="l-access__map"></div>   <!-- 地図 -->
+                <div class="l-access__back">    <!-- 説明文の背景色 -->
+                    <div class="l-access__text">    <!-- 説明文 -->
+                        <h2>見出しが入ります</h2>
+                        <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                    </div>        
                 </div>
-            </section>
+            </section> 
         </div>
+        <!-- フッター -->
         <footer class="l-footer">
-            <div class="l-footer__menu">
-                ショップ情報｜ヒストリー
-            </div>
+            <ul class="l-footer__menu">
+                <li class="l-pseudo"><a href="#">ショップ情報</a></li>
+                <li><a href="#">ヒストリー</a></li>
+            </ul>
             <p class="copyright">Copyright: RaiseTech</p>
         </footer>
     </div>

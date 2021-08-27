@@ -1,0 +1,15 @@
+@charset "UTF-8";
+// ヘッダー部検索フォーム
+.c-search-form__keyword {
+    padding-left: 10px;
+    display: inline-block;
+    font-family: "Font Awesome 5 Free";
+    color: black;
+    content: "\f002";
+    font-weight: 900;
+    width: 396px;
+    height: 46px;
+    border: 1px solid #707070;
+    border-radius: 10px;
+    font-size: 25px;
+}

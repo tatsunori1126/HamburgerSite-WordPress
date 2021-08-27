@@ -1,147 +1,159 @@
-.main {
+@charset "UTF-8";
+// メイン
+.l-main {
     background-color: #FFFFFF;
-}
-.top-header {
-    background-image: url(/images/front-page_top_img.png);
-    width: 100%;
-    height: 530px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    h2 {
-        font-size: 40px;
-        font-weight: bold;
-        color: #FFFFFF;
-    }
-}
-
-.branch-menu {
-    height: 1447px;
-    ul {
-        display: flex;
-        justify-content: center;
-        .take-out {
-            background-image: url(/images/front-page_main_img01.png);
-            background-repeat: no-repeat;
-            background-position: center;
-            height: 1200px;
-            width: 40%;
-            h2 {
-                color: #EAEAEA;
-                font-size: 80px;
-                font-family: Roboto;
-                position: relative;
-            }
-            h2::before {
-                content: "";
-                display: block;
-                width: 63px;
-                height: 4px;
-                background-color: #FFFFFF;
-                position: absolute;
-                top: 150px;
-                left: 0;
-            }            
-            &__section1, &__section2 {
-                background-color: #FFFFFF;
-                opacity: 0.8;
-                width: 90%;
-                height: 175px;
-                dt {
-                    font-size: 24px;
-                    font-weight: bold;
-                    color: #3C2A10;
-                }
-                dd {
-                    color: #3C2A10;
-                }
-            }
-        }
-        .eat-in {
-            background-image: url(/images/front-page_main_img02.png);
-            background-repeat: no-repeat;
-            background-position: center;
-            height: 1200px;
-            width: 40%;
-            h2 {
-                color: #EAEAEA;
-                font-size: 80px;
-                font-family: Roboto;
-                position: relative;
-            }
-            h2::before {
-                content: "";
-                display: block;
-                width: 63px;
-                height: 4px;
-                background-color: #FFFFFF;
-                position: absolute;
-                top: 150px;
-                left: 0;
-            }        
-            &__section1, &__section2 {
-                background-color: #FFFFFF;
-                opacity: 0.8;
-                width: 90%;
-                height: 175px;
-                dt {
-                    font-size: 24px;
-                    font-weight: bold;
-                    color: #3C2A10;
-                }
-                dd {
-                    color: #3C2A10;
-                }
-            }
-        }
-    }
-}
-.access {
-    background-color: rgba(0,0,0,1);
-    width: 100%;
-    height: 650px;
-    .l-bg-image {
-        background-image: url(/images/front-page_screenshot.png);
+    // トップ画像
+    .l-top-header {
+        background-image: url(/images/front-page_top_img.png);
+        width: 100%;
+        height: 530px;
+        background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        width: 100%;
-        height: 650px;
-        opacity: 0.6;
-        .l-bg-mask {
-            height: 100%;
-            background: rgba(255,255,255,0);
-            .l-text-back {
-                // background-color: rgba(0, 0, 0, 0.3);
-                background-color: #000000;
-                opacity: 0.3;
-                height: 650px;
-                width: 60%;
-                .l-text {
-                    width: 80%;
-                    margin: 0 auto;
-                    h2 {
-                        font-size: 36px;
+        // トップ画像見出し
+        h2 {
+            font-size: 40px;
+            font-weight: bold;
+            color: #FFFFFF;
+        }
+    }
+    // ブランチメニュー
+    .l-branch-menu {
+        height: 1447px;
+        ul {
+            display: flex;  //テイクアウトのブロックとイートインのブロックを横並びにする
+            justify-content: center;    //横並びにしたテイクアウトとイートインを画面センターに移動
+            // テイクアウト
+            .l-take-out {
+                background-image: url(/images/front-page_main_img01.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                height: 1200px;
+                width: 40%;
+                // テイクアウト見出し
+                h2 {
+                    color: #EAEAEA;
+                    font-size: 80px;
+                    font-family: Roboto;
+                    position: relative; //装飾線の基準位置にするため
+                }
+                // テイクアウト見出しの装飾線
+                h2::before {
+                    content: "";    //擬似要素で必須
+                    display: block;
+                    width: 63px;    //装飾線の長さ
+                    height: 4px;    //装飾線の太さ
+                    background-color: #FFFFFF;  //装飾線の色
+                    position: absolute; //テイクアウト見出しの位置を基準とする
+                    top: 150px; //テイクアウト見出しの位置から下に150px移動
+                    left: 0;
+                }            
+                // テイクアウト説明文
+                &__section1, &__section2 {
+                    background-color: #FFFFFF;
+                    opacity: 0.8;
+                    width: 90%;
+                    height: 175px;
+                    dt {
+                        font-size: 24px;
                         font-weight: bold;
-                        color: #FFFFFF;
-                        position: relative;
+                        color: #3C2A10;
                     }
-                    h2::before {
-                        content: "";
-                        display: block;
-                        width: 75px;
-                        height: 2px;
-                        background-color: #FFFFFF;
-                        position: absolute;
-                        top: 110px;
-                        left: 0;
-                    }        
-        
-                    p {
-                        font-weight: bold;
-                        color: #FFFFFF;
-                        line-height: 2;
+                    dd {
+                        color: #3C2A10;
                     }
                 }
+            }
+            // イートイン
+            .l-eat-in {
+                background-image: url(/images/front-page_main_img02.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                height: 1200px;
+                width: 40%;
+                // イートイン見出し
+                h2 {
+                    color: #EAEAEA;
+                    font-size: 80px;
+                    font-family: Roboto;
+                    position: relative; //装飾線の基準位置にするため
+                }
+                // イートイン見出しの装飾線
+                h2::before {
+                    content: "";    //擬似要素で必須
+                    display: block;
+                    width: 63px;    //装飾線の長さ
+                    height: 4px;    //装飾線の太さ
+                    background-color: #FFFFFF;  //装飾線の色
+                    position: absolute; //イートイン見出しの位置を基準とする
+                    top: 150px; //イートイン見出しの位置から下に150px移動
+                    left: 0;
+                }        
+                // イートイン説明文
+                &__section1, &__section2 {
+                    background-color: #FFFFFF;
+                    opacity: 0.8;
+                    width: 90%;
+                    height: 175px;
+                    dt {
+                        font-size: 24px;
+                        font-weight: bold;
+                        color: #3C2A10;
+                    }
+                    dd {
+                        color: #3C2A10;
+                    }
+                }
+            }
+        }
+    }
+}
+// アクセス
+// 最背面の黒色の背景色
+.l-access {
+    position: relative;
+    background-color: #000000;
+    width: 100%;
+    height: 650px;
+    // 地図
+    &__map {
+        background-image: url(/images/front-page_screenshot.png);
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        opacity: 0.6;   //地図を透過させる
+    }
+    // 説明文の背景色
+    &__back {
+        background-color: rgba(0,0,0,0.3);  //#000000で書くと説明文の文字が一緒に透過してしまうのでrgbaを使用
+        position: absolute; //最背面の黒色の背景位置を基準
+        width: 61.5%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        // 説明文
+        .l-access__text {
+            color: #FFFFFF;
+            width: 73%;
+            font-weight: bold;
+            h2 {
+                font-size: 36px;
+                position: relative; //装飾線の基準位置にするため
+            }
+            // 説明文見出しの装飾線
+            h2::before {
+                content: "";    //擬似要素で必須
+                display: block;
+                width: 75px;    //装飾線の長さ
+                height: 2px;    //装飾線の太さ
+                background-color: #FFFFFF;  //装飾線の色
+                position: absolute; //h2の見出しの位置を基準とする
+                top: 107px; //h2の見出しの位置から下に107px移動
+                left: 0;
+            }        
+            p {
+                line-height: 2;
             }
         }
     }

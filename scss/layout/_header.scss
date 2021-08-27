@@ -1,38 +1,13 @@
 @charset "UTF-8";
-.header {
+.l-header {
     background-color: #FFF7EF;
     height: 217px;
     display: flex;
     justify-content: space-between;
-}
-h1 a {
-    font-size: 64px;
-    font-family: Roboto;
-    color: #707070;
-    text-decoration: none;
-}
-.p-search-form__keyword {
-    padding-left: 10px;
-    display: inline-block;
-    font-family: "Font Awesome 5 Free";
-    color: black;
-    content: "\f002";
-    font-weight: 900;
-    width: 396px;
-    height: 46px;
-    border: 1px solid #707070;
-    border-radius: 10px;
-    font-size: 25px;
-}
-.p-search-form__submit {
-    display: inline-block;
-    position: relative;
-    top: -2px;
-    font-family: M+ 1m;
-    font-weight: bold;
-    padding: 12px 52px;
-    height: 46px;
-    border-radius: 10px;
-    border: 1px solid #707070;
-    cursor: pointer;
+    h1 a {
+        font-size: 64px;
+        font-family: Roboto;
+        color: #707070;
+        text-decoration: none;
+    }
 }

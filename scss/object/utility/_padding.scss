@@ -1,16 +1,19 @@
 @charset "UTF-8";
-.top-header {
+// メイン
+// トップ画像
+.l-top-header {
+    // トップ画像見出し
     h2 {
         padding: 230px 0 0 85px;
     }
 }
-.take-out dt, .eat-in dt {
+// テイクアウト、イートイン説明文見出し
+.l-take-out dt, .l-eat-in dt {
     padding: 20px 0 0 20px;
 }
-.take-out dd, .eat-in dd {
+// テイクアウト、イートイン説明文
+.l-take-out dd, .l-eat-in dd {
     padding: 23px 0 0 20px;
 }
 
-.l-text {
-    padding-top: 80px;
-}
+

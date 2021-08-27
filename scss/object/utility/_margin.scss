@@ -1,12 +1,22 @@
-.p-search-form__submit {
-    margin-left: 7px;
+@charset "UTF-8";
+// ヘッダー
+.l-header {
+    h1 {
+        margin: 55px 0 0 65px;
+    }
+    // 検索フォーム
+    form {
+        margin-top: 85px;
+        margin-right: 30px;
+        .c-search-form__submit {    //検索ボタン
+            margin-left: 7px;
+        }
+    }
 }
-
+// サイドバー
 .l-sidebar {
     h2 {
-       margin-top: 82px;
-       margin-left: 45px;
-       margin-bottom: 85px; 
+       margin: 82px 0 85px 45px;
     }
     &__burger, &__side, &__drink {
         margin-left: 45px;
@@ -24,50 +34,52 @@
         }
     }
 }
-
-
-.l-footer__menu {
-    margin-top: 40px;
-    margin-bottom: 35px;
-}
-
-form {
-    margin-top: 85px;
-    margin-right: 30px;
-}
-
-h1 {
-    margin: 55px 0 0 65px;
-}
-
-.take-out {
+// メイン
+// テイクアウト
+.l-take-out {
     margin-top: 120px;
+    // テイクアウト見出し
     h2 {
         margin: 15px 0 0 20px;
     }
+    // テイクアウト説明文1
     &__section1 {
         margin: 670px auto 20px ;
     }
+    // テイクアウト説明文2
     &__section2 {
         margin: 0 auto ;
     }
 }
-.eat-in {
+// イートイン
+.l-eat-in {
     margin-left: 80px;
     margin-top: 120px;
+    // イートイン見出し
     h2 {
         margin: 15px 0 0 20px;
     }
+    // イートイン説明文1
     &__section1 {
         margin: 670px auto 20px;
     }
+    // イートイン説明文2
     &__section2 {
         margin: 0 auto ;
     }
 }
-
-.l-text {
+// アクセス
+// 説明文
+.l-access__text {
+    margin: 0 auto;
     h2 {
-        margin-bottom: 120px;
+        margin-top: 80px;
     }
-} 
+    p {
+        margin-top: 113px;
+    }
+}
+// フッター
+.l-footer__menu {
+    margin: 40px 0 35px;
+}
