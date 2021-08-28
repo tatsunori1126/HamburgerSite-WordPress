@@ -4,6 +4,7 @@
    ========================================================================== */
 /* モダンリセットCSS */
 /* Box sizing rules */
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;700&display=swap");
 *,
 *::before,
 *::after {
@@ -92,6 +93,7 @@ body {
 
 body {
   background-color: #F2EDE9;
+  font-family: 'M PLUS 1p', sans-serif;
 }
 
 /* ==========================================================================
@@ -489,6 +491,7 @@ body {
 
 .l-access__back .l-access__text h2 {
   font-size: 30px;
+  font-weight: bold;
   position: relative;
 }
 
@@ -517,6 +520,7 @@ body {
 
 .l-access__back .l-access__text p {
   font-size: 14px;
+  font-weight: bold;
   line-height: 2.35;
 }
 
@@ -542,6 +546,7 @@ body {
   }
   .l-sidebar h3 {
     font-size: 24px;
+    font-weight: bold;
     color: #707070;
   }
   .l-sidebar ul li a {

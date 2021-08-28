@@ -238,6 +238,7 @@
             }
             h2 {
                 font-size: 30px;
+                font-weight: bold;
                 position: relative; //装飾線の基準位置にするため
                 @include pc {
                     font-size: 36px;
@@ -259,6 +260,7 @@
             }        
             p {
                 font-size: 14px;
+                font-weight: bold;
                 line-height: 2.35;
                 @include pc {
                     font-size: 16px;
