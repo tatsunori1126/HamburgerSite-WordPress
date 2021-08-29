@@ -8,7 +8,6 @@ $tab: 600px;    //タブレット
         @content;
     }
 }
-
 // タブレット
 @mixin tab {
     @media (min-width: ($tab)) {

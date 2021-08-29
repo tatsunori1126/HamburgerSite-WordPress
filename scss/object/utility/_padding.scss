@@ -1,7 +1,7 @@
 @charset "UTF-8";
 // メイン
 // トップ画像
-.l-top-header {
+.p-top-visual {
     // トップ画像見出し
     h2 {
         padding-left: 25px;
@@ -11,14 +11,14 @@
     }
 }
 // テイクアウト、イートイン説明文見出し
-.l-take-out dt, .l-eat-in dt {
+.p-take-out dt, .p-eat-in dt {
     padding: 20px 0 0 10px;
     @include pc {
         padding: 20px 0 0 20px;
     }
 }
 // テイクアウト、イートイン説明文
-.l-take-out dd, .l-eat-in dd {
+.p-take-out dd, .p-eat-in dd {
     padding: 23px 0 0 10px;
     @include pc {
         padding: 23px 0 0 20px;
@@ -26,6 +26,6 @@
 }
 
 // フッター
-.l-footer__menu {
+.p-footer__menu {
     padding: 40px 0 35px;
 }

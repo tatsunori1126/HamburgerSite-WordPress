@@ -1,0 +1,19 @@
+@charset "UTF-8";
+// ブランチメニュー
+.p-branch-menu {
+    height: 1374px;
+    width: 100%;
+    @include tab {
+        height: 761px;
+    }
+    @include pc {
+        height: 1447px;
+    }
+    ul {
+        display: block;
+        @include tab {
+            display: flex;  //テイクアウトのブロックとイートインのブロックを横並びにする
+            justify-content: center;    //横並びにしたテイクアウトとイートインを画面センターに移動
+        }
+    }
+}

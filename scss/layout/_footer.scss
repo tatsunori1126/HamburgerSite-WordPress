@@ -6,36 +6,4 @@
     text-align: center;
     margin: 0 auto;
     background-image: url(/images/footer_img.png);
-    &__menu {
-        font-size: 20px;
-        display: flex;
-        justify-content: center;
-        .l-pseudo {
-            position: relative; //擬似要素を使うため（縦の装飾線）
-        }
-        li:nth-child(1) {
-            margin-right: 17px;
-        }
-        li:nth-child(2) {
-            margin-left: 17px;
-        }
-        .l-pseudo::before {
-            content: "";    //擬似要素で必須
-            display: block;
-            width: 2px;    //装飾線の太さ
-            height: 22px;    //装飾線の長さ
-            background-color: #FFFFFF;  //装飾線の色
-            position: absolute; //ショップ情報の位置を基準とする
-            top: 5px; //ショップ情報の位置から下に5px移動
-            left: 135px;    //ショップ情報の位置から右に135px移動
-        }        
-        a {
-            text-decoration: none;
-            color: #FFFFFF;
-        }
-    }
-    .copyright {
-        font-size: 14px;
-        color: #FFFFFF;
-    }
 }

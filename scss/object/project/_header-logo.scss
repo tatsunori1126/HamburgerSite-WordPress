@@ -1,0 +1,10 @@
+@charset "UTF-8";
+h1 a {
+    font-size: 40px;
+    font-family: Roboto;
+    color: #707070;
+    text-decoration: none;
+    @include pc {
+        font-size: 64px;
+    }
+}

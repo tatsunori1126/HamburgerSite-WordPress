@@ -1,0 +1,145 @@
+@charset "UTF-8";
+// テイクアウト画像
+.p-take-out {
+    background-image: url(/images/front-page_main_img01.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 642px;
+    width: 89%;
+    @include tab {
+        height: 681px;
+        width: 42.8%;
+    }
+    @include pc {
+        height: 1200px;
+        width: 40%;
+    }
+    // テイクアウト見出し
+    h2 {
+        font-size: 41px;
+        color: #EAEAEA;
+        font-family: Roboto;
+        position: relative; //装飾線の基準位置にするため
+        @include tab {
+            font-size: 44px;
+        }
+        @include pc {
+            font-size: 80px;
+        }
+    }
+    // テイクアウト見出しの装飾線
+    h2::before {
+        content: "";    //擬似要素で必須
+        display: block;
+        width: 63px;    //装飾線の長さ
+        height: 4px;    //装飾線の太さ
+        background-color: #FFFFFF;  //装飾線の色
+        position: absolute; //テイクアウト見出しの位置を基準とする
+        left: 0;
+        top: 75px;
+        @include tab {
+            top: 70px;
+            @include pc {
+                top: 150px; //テイクアウト見出しの位置から下に150px移動
+            }
+        }
+    }            
+    // テイクアウト説明文
+    &__section1, &__section2 {
+        background-color: #FFFFFF;
+        opacity: 0.8;
+        width: 94%;
+        height: 163px;
+        @include tab {
+            width: 93.5%;
+            height: 172px;
+        }
+        @include pc {
+            width: 90%;
+            height: 175px;
+        }
+        dt {
+            font-size: 22px;
+            font-weight: bold;
+            color: #3C2A10;
+            @include tab {
+                font-size: 24px;
+            }
+        }
+        dd {
+            color: #3C2A10;
+        }
+    }
+}
+// イートイン
+.p-eat-in {
+    background-image: url(/images/front-page_main_img02.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 642px;
+    width: 89%;
+    @include tab {
+        height: 681px;
+        width: 42.8%;
+    }
+    @include pc {
+        height: 1200px;
+        width: 40%;
+    }
+    // イートイン見出し
+    h2 {
+        font-size: 41px;
+        color: #EAEAEA;
+        font-family: Roboto;
+        position: relative; //装飾線の基準位置にするため
+        @include tab {
+            font-size: 44px;
+        }
+        @include pc {
+            font-size: 80px;
+        }
+    }
+    // イートイン見出しの装飾線
+    h2::before {
+        content: "";    //擬似要素で必須
+        display: block;
+        width: 63px;    //装飾線の長さ
+        height: 4px;    //装飾線の太さ
+        background-color: #FFFFFF;  //装飾線の色
+        position: absolute; //イートイン見出しの位置を基準とする
+        left: 0;
+        top: 75px;
+        @include tab {
+            top: 70px;
+            @include pc {
+                top: 150px; //イートイン見出しの位置から下に150px移動
+            }
+        }
+    }        
+    // イートイン説明文
+    &__section1, &__section2 {
+        background-color: #FFFFFF;
+        opacity: 0.8;
+        width: 94%;
+        height: 163px;
+        @include tab {
+            width: 93.5%;
+            height: 172px;
+        }
+        @include pc {
+            width: 90%;
+            height: 175px;
+        }
+        dt {
+            font-size: 22px;
+            font-weight: bold;
+            color: #3C2A10;
+            @include tab {
+                font-size: 24px;
+            }
+        }
+        dd {
+            color: #3C2A10;
+        }
+    }
+}

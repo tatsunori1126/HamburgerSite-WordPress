@@ -1,0 +1,12 @@
+@charset "UTF-8";
+.p-search-form {
+    // ボタンのサイズなど細かい調整を記述する
+    .c-button--submit {
+        top: -2px;
+        height: 46px;
+        padding: 12px 23px;
+        @include pc {
+            padding: 12px 52px;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+@charset "UTF-8";
+// トップ画像
+.p-top-visual {
+    background-image: url(/images/front-page_top_img.png);
+    width: 100%;
+    height: 285px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    @include pc {
+        height: 530px;
+    }
+    // トップ画像見出し
+    h2 {
+        font-size: 36px;
+        font-weight: bold;
+        color: #FFFFFF;
+        @include pc {
+            font-size: 40px;
+        }
+    }
+}
