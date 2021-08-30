@@ -2,11 +2,14 @@
 .p-search-form {
     // ボタンのサイズなど細かい調整を記述する
     .c-button--submit {
-        top: -2px;
+        top: -3.5px;
         height: 46px;
-        padding: 12px 23px;
+        width: 80px;
+        @include tab {
+            width: 136px;
+        }
         @include pc {
-            padding: 12px 52px;
+            width: 80px;
         }
     }
 }

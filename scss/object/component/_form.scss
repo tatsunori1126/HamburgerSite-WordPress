@@ -15,4 +15,7 @@
     @include tab {
         width: 396px;
     }
+    @include pc {
+        width: 280px;
+    }
 }

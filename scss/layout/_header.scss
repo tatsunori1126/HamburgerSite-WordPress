@@ -2,10 +2,12 @@
 .l-header {
     background-color: #FFF7EF;
     height: 217px;
-    display: block;
-    text-align: center;
-    @include pc {
-        display: flex;
-        justify-content: space-between;
+    .l-header__sub {
+        display: block;
+        text-align: center;
+        @include pc {
+            display: flex;
+            justify-content: space-between;
+        }
     }
 }

@@ -4,8 +4,28 @@
 .c-button--submit {
     display: inline-block;
     position: relative;
-    font-weight: bold;
+    font-weight: normal;
     border-radius: 10px;
     border: 1px solid #707070;
     cursor: pointer;
+}
+.p-menu-button {
+    height: 20px;
+}
+.c-button--menu {
+    text-align: right;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    height: 26px;
+    background-color: #FFF7EF;
+    color: #707070;
+    border: none;
+    cursor: pointer;
+    @include tab {
+        font-size: 34px;
+    }
+    @include pc {
+        display: none;
+    }
 }
