@@ -12,20 +12,26 @@
 .p-menu-button {
     height: 20px;
 }
-.c-button--menu {
+.c-button--menu1 {
     text-align: right;
-    display: inline-block;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    height: 26px;
-    background-color: #FFF7EF;
-    color: #707070;
-    border: none;
-    cursor: pointer;
-    @include tab {
-        font-size: 34px;
-    }
-    @include pc {
-        display: none;
+    .c-button--menu {
+        display: inline-block;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        background-color: #FFF7EF;
+        color: #707070;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        top: 15px;
+        right: 15px;
+        @include tab {
+            font-size: 34px;
+            top: 20px;
+            right: 25px;
+        }
+        @include pc {
+            display: none;
+        }
     }
 }

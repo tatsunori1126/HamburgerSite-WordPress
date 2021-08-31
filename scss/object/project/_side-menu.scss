@@ -1,8 +1,29 @@
 @charset "UTF-8";
+.p-side-menu {
+    position: absolute;
+    width: 87.5%;
+    z-index: 1000;
+    background-color: #F2EDE9;
+    height: 2737px;
+    top: 0;
+    right: 0;
+    @include tab {
+        width: 44%;
+        height: 1828px;
+    }
+    @include pc {
+        position: static;
+        width: 100%;
+    }
+}
 .p-side__menu-logo {
-    font-family: Roboto;
-    font-size: 34px;
-    color: #707070;
+    display: none;
+    @include pc {
+        display: block;
+        font-family: Roboto;
+        font-size: 34px;
+        color: #707070;
+    }
 }
 .p-side__sub-menu-logo {
     font-size: 24px;
@@ -13,5 +34,8 @@ ul li a {
     font-size: 20px;
     color: #707070;
     text-decoration: none;
+    @include pc {
+        font-size: 1.4vw;
+    }
     // white-space: nowrap;
 }

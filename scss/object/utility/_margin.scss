@@ -4,7 +4,7 @@
     &__sub {
         margin-top: 15px;
         @include tab {
-            margin-top: 2px;
+            margin-top: -5px;
         }
         @include pc {
             margin-top: 35px;
@@ -31,8 +31,17 @@
     .p-side__menu-logo {
        margin: 82px 0 85px 45px;
     }
+    .p-sidebar__burger {
+        margin-top: 210px;
+        @include pc {
+            margin-top: 0;
+        }
+    }
     .p-sidebar__burger, .p-sidebar__side, .p-sidebar__drink {
         margin-left: 45px;
+        @include pc {
+            margin-left: 40px;
+        }
         .p-side__sub-menu-logo {
             margin-bottom: 40px;
         }
