@@ -91,6 +91,7 @@ ul {
 body {
   background-color: #F2EDE9;
   font-family: 'M PLUS 1p', sans-serif;
+  overflow-x: hidden;
 }
 
 /* ==========================================================================
@@ -154,7 +155,8 @@ body {
   position: absolute;
   height: 2737px;
   top: 0;
-  left: 0;
+  left: 100%;
+  transition: left .1s;
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   z-index: 100;
@@ -168,6 +170,7 @@ body {
 
 @media (min-width: 1025px) {
   .l-sidebar {
+    height: 2844px;
     display: block;
     position: static;
     width: 100%;
@@ -230,6 +233,39 @@ body {
   .c-button--menu1 .c-button--menu {
     display: none;
   }
+}
+
+.c-close__button {
+  display: block;
+  position: relative;
+  top: 40px;
+  text-align: right;
+  cursor: pointer;
+}
+
+@media (min-width: 1025px) {
+  .c-close__button {
+    display: none;
+  }
+}
+
+.c-close__button::before, .c-close__button::after {
+  /* 共通設定 */
+  content: "";
+  position: absolute;
+  width: 5px;
+  /* 棒の幅（太さ） */
+  height: 32px;
+  /* 棒の高さ */
+  background: #707070;
+}
+
+.c-close__button::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.c-close__button::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 .c-input--keyword {
@@ -690,6 +726,7 @@ h1 a {
 @media (min-width: 1025px) {
   .p-side-menu {
     position: static;
+    height: 100vh;
     width: 100%;
   }
 }
@@ -794,6 +831,10 @@ ul li a {
 
 .l-sidebar .p-side__menu-logo {
   margin: 82px 0 85px 45px;
+}
+
+.l-sidebar .c-close__button {
+  margin-right: 35px;
 }
 
 .l-sidebar .p-sidebar__burger {

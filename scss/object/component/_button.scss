@@ -35,3 +35,27 @@
         }
     }
 }
+// 閉じるボタン（Xマーク）
+.c-close__button {
+    display: block;
+    position: relative;
+    top: 40px;
+    text-align: right;
+    cursor: pointer;
+    @include pc {
+        display: none;
+    }
+  }
+  .c-close__button::before, .c-close__button::after { /* 共通設定 */
+    content: "";
+    position: absolute;
+    width: 5px; /* 棒の幅（太さ） */
+    height: 32px; /* 棒の高さ */
+    background: #707070;
+  }
+  .c-close__button::before {
+    transform: translate(-50%,-50%) rotate(45deg);
+  }
+  .c-close__button::after {
+    transform: translate(-50%,-50%) rotate(-45deg);
+  }

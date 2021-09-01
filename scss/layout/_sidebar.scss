@@ -4,7 +4,8 @@
     position: absolute;
     height: 2737px;
     top: 0;
-    left: 0;
+    left: 100%; //スマホ、タブレットの時はサイドメニューを画面外に表示させる
+    transition: left .1s;
     background-color: rgba(0,0,0,0.5);
     width: 100%;
     z-index: 100;
@@ -12,6 +13,7 @@
         height: 1828px;
     }
     @include pc {
+        height: 2844px;
         display: block;
         position: static;
         width: 100%;
