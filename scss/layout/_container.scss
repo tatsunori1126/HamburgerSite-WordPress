@@ -2,6 +2,7 @@
 // コンテナー
 .l-container {
     display: block;
+    position: relative;
     
     @include pc {
         display: grid;

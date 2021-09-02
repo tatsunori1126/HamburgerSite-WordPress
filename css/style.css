@@ -94,11 +94,24 @@ body {
   overflow-x: hidden;
 }
 
+body.is-fixed {
+  overflow: hidden;
+}
+
+body.is-fixed::before {
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 500;
+}
+
 /* ==========================================================================
    Layout
    ========================================================================== */
 .l-container {
   display: block;
+  position: relative;
 }
 
 @media (min-width: 1025px) {
@@ -153,28 +166,38 @@ body {
 .l-sidebar {
   display: block;
   position: absolute;
-  height: 2737px;
+  height: 100vh;
   top: 0;
   left: 100%;
-  transition: left .1s;
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 100%;
-  z-index: 100;
+  transition: left .3s;
+  width: 87.5%;
+  z-index: 1000;
+  overflow-y: scroll;
 }
 
 @media (min-width: 600px) {
   .l-sidebar {
-    height: 1828px;
+    width: 44%;
   }
 }
 
 @media (min-width: 1025px) {
   .l-sidebar {
-    height: 2844px;
     display: block;
     position: static;
     width: 100%;
     background-color: #F2EDE9;
+    overflow: inherit;
+  }
+}
+
+.is-open {
+  left: 12.5%;
+}
+
+@media (min-width: 600px) {
+  .is-open {
+    left: 56%;
   }
 }
 
@@ -182,7 +205,6 @@ body {
   height: 150px;
   width: 100%;
   text-align: center;
-  margin: 0 auto;
   background-image: url(/images/footer_img.png);
 }
 
@@ -688,6 +710,21 @@ h1 a {
   color: #3C2A10;
 }
 
+.mask {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+}
+
+.show {
+  display: block;
+}
+
 .p-search-form .c-button--submit {
   top: -3.5px;
   height: 46px;
@@ -708,25 +745,22 @@ h1 a {
 
 .p-side-menu {
   position: absolute;
-  width: 87.5%;
+  width: 100%;
   z-index: 1000;
   background-color: #F2EDE9;
-  height: 2737px;
   top: 0;
   right: 0;
 }
 
 @media (min-width: 600px) {
   .p-side-menu {
-    width: 44%;
-    height: 1828px;
+    width: 100%;
   }
 }
 
 @media (min-width: 1025px) {
   .p-side-menu {
     position: static;
-    height: 100vh;
     width: 100%;
   }
 }
@@ -750,16 +784,23 @@ h1 a {
   color: #707070;
 }
 
-ul li a {
+.p-side-menu ul li a {
   font-size: 20px;
   color: #707070;
   text-decoration: none;
 }
 
 @media (min-width: 1025px) {
-  ul li a {
+  .p-side-menu ul li a {
     font-size: 1.4vw;
   }
+}
+
+.modalnav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
 }
 
 .p-top-visual {

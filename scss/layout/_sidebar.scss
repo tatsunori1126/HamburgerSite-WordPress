@@ -2,21 +2,28 @@
 .l-sidebar {
     display: block;
     position: absolute;
-    height: 2737px;
+    height: 100vh;
     top: 0;
     left: 100%; //スマホ、タブレットの時はサイドメニューを画面外に表示させる
-    transition: left .1s;
-    background-color: rgba(0,0,0,0.5);
-    width: 100%;
-    z-index: 100;
+    transition: left .3s;
+    width: 87.5%;
+    z-index: 1000;
+    overflow-y: scroll;
+
     @include tab {
-        height: 1828px;
+        width: 44%;
     }
     @include pc {
-        height: 2844px;
         display: block;
         position: static;
         width: 100%;
         background-color: #F2EDE9;
+        overflow: inherit;
+    }
+}
+.is-open {
+    left: 12.5%;
+    @include tab {
+        left: 56%;
     }
 }

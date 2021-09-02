@@ -12,119 +12,120 @@
 </head>
 <body>
     <div class="l-container">
-        <!-- ヘッダー -->
-        <header class="l-header">
-            <div class="c-button--menu1">
-                <button type="button" class="c-button--menu c-button--menu--js">Menu</button>  <!-- レスポンシブ用メニューボタン -->
-            </div>
-            <div class="l-header__sub">
-                <h1><a href="front-page.html">Hamburger</a></h1>
-                <!-- 検索フォーム -->
-                <form action="#" class="p-search-form">
-                    <input type="search" name="search" class="c-input--keyword" placeholder="&#xf002">
-                    <input type="submit" class="c-button--submit" value="検索">
-                </form>
-            </div>
-        </header>
-        <!-- サイドバー -->
-        <article class="l-sidebar">
-            <h2 class="p-side__menu-logo">Menu</h2>
-            <!-- バーガー -->
-            <div class="p-side-menu">
-                <span class="c-close__button c-close__button__js"></span>   <!-- レスポンシブ用閉じるボタン -->
-                <div class="p-sidebar__burger">
-                    <h3 class="p-side__sub-menu-logo">バーガー</h3>
+        <class class="mask"></class>
+            <!-- ヘッダー -->
+            <header class="l-header">
+                <div class="c-button--menu1">
+                    <button type="button" class="c-button--menu" id="c-button--menu--js">Menu</button>  <!-- レスポンシブ用メニューボタン -->
+                </div>
+                <div class="l-header__sub">
+                    <h1><a href="front-page.html">Hamburger</a></h1>
+                    <!-- 検索フォーム -->
+                    <form action="#" class="p-search-form">
+                        <input type="search" name="search" class="c-input--keyword" placeholder="&#xf002">
+                        <input type="submit" class="c-button--submit" value="検索">
+                    </form>
+                </div>
+            </header>
+            <!-- サイドバー -->
+            <article class="l-sidebar">
+                <h2 class="p-side__menu-logo">Menu</h2>
+                <!-- バーガー -->
+                <div class="p-side-menu">
+                    <span class="c-close__button" id="c-close__button__js"></span>   <!-- レスポンシブ用閉じるボタン -->
+                    <div class="p-sidebar__burger">
+                        <h3 class="p-side__sub-menu-logo">バーガー</h3>
+                        <ul>
+                            <li><a href="#">ハンバーガー</a></li>
+                            <li><a href="#">チーズバーガー</a></li>
+                            <li><a href="#">テリヤキバーガー</a></li>
+                            <li><a href="#">アボカドバーガー</a></li>
+                            <li><a href="#">フィッシュバーガー</a></li>
+                            <li><a href="#">ベーコンバーガー</a></li>
+                            <li><a href="#">チキンバーガー</a></li>
+                        </ul>
+                    </div>
+                    <!-- サイド -->
+                    <div class="p-sidebar__side">
+                        <h3 class="p-side__sub-menu-logo">サイド</h3>
+                        <ul>
+                            <li><a href="#">ポテト</a></li>
+                            <li><a href="#">サラダ</a></li>
+                            <li><a href="#">ナゲット</a></li>
+                            <li><a href="#">コーン</a></li>
+                        </ul>
+                    </div>
+                    <!-- ドリンク -->
+                    <div class="p-sidebar__drink">
+                        <h3 class="p-side__sub-menu-logo">ドリンク</h3>
+                        <ul>
+                            <li><a href="#">コーラ</a></li>
+                            <li><a href="#">ファンタ</a></li>
+                            <li><a href="#">オレンジ</a></li>
+                            <li><a href="#">アップル</a></li>
+                            <li><a href="#">紅茶（Ice/Hot）</a></li>
+                            <li><a href="#">コーヒー（Ice/Hot）</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <!-- メイン -->
+            <div class="l-main">
+                <div class="p-top-visual">  <!-- トップ画像 -->
+                    <h2>ダミーサイト</h2>   <!-- トップ画像見出し -->
+                </div>
+                <!-- ブランチメニュー -->
+                <div class="p-branch-menu">
                     <ul>
-                        <li><a href="#">ハンバーガー</a></li>
-                        <li><a href="#">チーズバーガー</a></li>
-                        <li><a href="#">テリヤキバーガー</a></li>
-                        <li><a href="#">アボカドバーガー</a></li>
-                        <li><a href="#">フィッシュバーガー</a></li>
-                        <li><a href="#">ベーコンバーガー</a></li>
-                        <li><a href="#">チキンバーガー</a></li>
+                        <!-- テイクアウト -->
+                        <li class="p-take-out">
+                            <h2>Take Out</h2>   <!-- テイクアウト見出し -->
+                            <!-- テイクアウト説明文1 -->
+                            <dl class="p-take-out__section1">
+                                <dt>Take OUT</dt>
+                                <dd>当店のテイクアウトで利用できる商品を掲載しています</dd>
+                            </dl>
+                            <!-- テイクアウト説明文2 -->
+                            <dl class="p-take-out__section2">
+                                <dt>Take OUT</dt>
+                                <dd>当店のテイクアウトで利用できる商品を掲載しています</dd>
+                            </dl>
+                        </li>
+                        <!-- イートイン -->
+                        <li class="p-eat-in">
+                            <h2>Eat In</h2> <!-- イートイン見出し -->
+                            <!-- イートイン説明文1 -->
+                            <dl class="p-eat-in__section1">
+                                <dt>Eat IN</dt>
+                                <dd>当店のテイクアウトで利用できる商品を掲載しています</dd>
+                            </dl>
+                            <!-- イートイン説明文2 -->
+                            <dl class="p-eat-in__section2">
+                                <dt>Eat IN</dt>
+                                <dd>当店のテイクアウトで利用できる商品を掲載しています</dd>
+                            </dl>
+                        </li>
                     </ul>
                 </div>
-                <!-- サイド -->
-                <div class="p-sidebar__side">
-                    <h3 class="p-side__sub-menu-logo">サイド</h3>
-                    <ul>
-                        <li><a href="#">ポテト</a></li>
-                        <li><a href="#">サラダ</a></li>
-                        <li><a href="#">ナゲット</a></li>
-                        <li><a href="#">コーン</a></li>
-                    </ul>
-                </div>
-                <!-- ドリンク -->
-                <div class="p-sidebar__drink">
-                    <h3 class="p-side__sub-menu-logo">ドリンク</h3>
-                    <ul>
-                        <li><a href="#">コーラ</a></li>
-                        <li><a href="#">ファンタ</a></li>
-                        <li><a href="#">オレンジ</a></li>
-                        <li><a href="#">アップル</a></li>
-                        <li><a href="#">紅茶（Ice/Hot）</a></li>
-                        <li><a href="#">コーヒー（Ice/Hot）</a></li>
-                    </ul>
-                </div>
+                <!-- アクセス -->
+                <section class="p-access">  <!-- 最背面の黒色の背景色 -->
+                    <div class="p-access__map"></div>   <!-- 地図 -->
+                    <div class="p-access__back">    <!-- 説明文の背景色 -->
+                        <div class="p-access__text">    <!-- 説明文 -->
+                            <h2>見出しが入ります</h2>
+                            <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                        </div>        
+                    </div>
+                </section> 
             </div>
-        </article>
-        <!-- メイン -->
-        <div class="l-main">
-            <div class="p-top-visual">  <!-- トップ画像 -->
-                <h2>ダミーサイト</h2>   <!-- トップ画像見出し -->
-            </div>
-            <!-- ブランチメニュー -->
-            <div class="p-branch-menu">
-                <ul>
-                    <!-- テイクアウト -->
-                    <li class="p-take-out">
-                        <h2>Take Out</h2>   <!-- テイクアウト見出し -->
-                        <!-- テイクアウト説明文1 -->
-                        <dl class="p-take-out__section1">
-                            <dt>Take OUT</dt>
-                            <dd>当店のテイクアウトで利用できる商品を掲載しています</dd>
-                        </dl>
-                        <!-- テイクアウト説明文2 -->
-                        <dl class="p-take-out__section2">
-                            <dt>Take OUT</dt>
-                            <dd>当店のテイクアウトで利用できる商品を掲載しています</dd>
-                        </dl>
-                    </li>
-                    <!-- イートイン -->
-                    <li class="p-eat-in">
-                        <h2>Eat In</h2> <!-- イートイン見出し -->
-                        <!-- イートイン説明文1 -->
-                        <dl class="p-eat-in__section1">
-                            <dt>Eat IN</dt>
-                            <dd>当店のテイクアウトで利用できる商品を掲載しています</dd>
-                        </dl>
-                        <!-- イートイン説明文2 -->
-                        <dl class="p-eat-in__section2">
-                            <dt>Eat IN</dt>
-                            <dd>当店のテイクアウトで利用できる商品を掲載しています</dd>
-                        </dl>
-                    </li>
+            <!-- フッター -->
+            <footer class="l-footer">
+                <ul class="p-footer__menu">
+                    <li class="p-pseudo"><a href="#">ショップ情報</a></li>
+                    <li><a href="#">ヒストリー</a></li>
                 </ul>
-            </div>
-            <!-- アクセス -->
-            <section class="p-access">  <!-- 最背面の黒色の背景色 -->
-                <div class="p-access__map"></div>   <!-- 地図 -->
-                <div class="p-access__back">    <!-- 説明文の背景色 -->
-                    <div class="p-access__text">    <!-- 説明文 -->
-                        <h2>見出しが入ります</h2>
-                        <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                    </div>        
-                </div>
-            </section> 
-        </div>
-        <!-- フッター -->
-        <footer class="l-footer">
-            <ul class="p-footer__menu">
-                <li class="p-pseudo"><a href="#">ショップ情報</a></li>
-                <li><a href="#">ヒストリー</a></li>
-            </ul>
-            <p class="copyright">Copyright: RaiseTech</p>
-        </footer>
+                <p class="copyright">Copyright: RaiseTech</p>
+            </footer>
     </div>
     <script type="text/javascript" src="js/slide-menu.js"></script>
 </body>
