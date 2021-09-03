@@ -1,0 +1,9 @@
+@charset "UTF-8";
+.p-header__sub {
+    display: block;
+    text-align: center;
+    @include pc {
+        display: flex;
+        justify-content: space-between;
+    }
+}

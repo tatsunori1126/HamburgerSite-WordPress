@@ -1,4 +1,7 @@
 @charset "UTF-8";
+html {
+    scroll-behavior: smooth;    //スクロールを滑らかに
+}
 body {
     background-color: #F2EDE9;
     font-family: 'M PLUS 1p', sans-serif;

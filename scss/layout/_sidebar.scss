@@ -21,9 +21,4 @@
         overflow: inherit;
     }
 }
-.is-open {
-    left: 12.5%;
-    @include tab {
-        left: 56%;
-    }
-}
+

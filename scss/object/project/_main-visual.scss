@@ -18,7 +18,7 @@
     h2 {
         font-size: 41px;
         color: #EAEAEA;
-        font-family: Roboto;
+        font-family: 'Roboto', sans-serif;
         position: relative; //装飾線の基準位置にするため
         @include tab {
             font-size: 44px;
@@ -90,7 +90,7 @@
     h2 {
         font-size: 41px;
         color: #EAEAEA;
-        font-family: Roboto;
+        font-family: 'Roboto', sans-serif;
         position: relative; //装飾線の基準位置にするため
         @include tab {
             font-size: 44px;

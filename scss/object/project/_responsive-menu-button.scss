@@ -1,0 +1,16 @@
+@charset "UTF-8";
+.p-button--responsive {
+    .c-button--menu {
+        font-size: 20px;
+        top: 15px;
+        right: 15px;
+        @include tab {
+            font-size: 34px;
+            top: 20px;
+            right: 25px;
+        }
+        @include pc {
+            display: none;
+        }
+    }
+}

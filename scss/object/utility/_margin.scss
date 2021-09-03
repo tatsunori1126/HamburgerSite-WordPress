@@ -1,7 +1,7 @@
 @charset "UTF-8";
 // ヘッダー
 .l-header {
-    &__sub {
+    .p-header__sub {
         margin-top: 15px;
         @include tab {
             margin-top: -5px;
@@ -127,4 +127,12 @@
         }
     }
 }
-
+// フッター
+.p-footer__menu {
+    li:nth-child(1) {
+        margin-right: 17px;
+    }
+    li:nth-child(2) {
+        margin-left: 17px;
+    }
+}

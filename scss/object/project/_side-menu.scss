@@ -20,7 +20,7 @@
     display: none;
     @include pc {
         display: block;
-        font-family: Roboto;
+        font-family: 'Roboto', sans-serif;
         font-size: 34px;
         color: #707070;
     }
@@ -38,10 +38,9 @@
         font-size: 1.4vw;
     }
 }
-
-.modalnav {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    overflow-y: auto;
+.is-open {
+    left: 12.5%;
+    @include tab {
+        left: 56%;
+    }
 }

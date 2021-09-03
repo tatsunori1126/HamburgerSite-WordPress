@@ -6,12 +6,6 @@
     .p-pseudo {
         position: relative; //擬似要素を使うため（縦の装飾線）
     }
-    li:nth-child(1) {
-        margin-right: 17px;
-    }
-    li:nth-child(2) {
-        margin-left: 17px;
-    }
     .p-pseudo::before {
         content: "";    //擬似要素で必須
         display: block;
