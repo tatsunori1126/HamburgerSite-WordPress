@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HamburgerSite</title>
-    <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
     <!-- jQueryの読み込み -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
@@ -16,7 +16,7 @@
         <!-- ヘッダー -->
         <header class="l-header">
             <div class="p-button--responsive">
-                <button type="button" class="c-button--menu" id="c-button--menu--js">Menu</button>  <!-- レスポンシブ用メニューボタン -->
+                <button type="button" class="c-button--menu" id="js-menu-button">Menu</button>  <!-- レスポンシブ用メニューボタン -->
             </div>
             <div class="p-header__sub">
                 <h1><a href="front-page.html">Hamburger</a></h1>
@@ -28,11 +28,11 @@
             </div>
         </header>
         <!-- サイドバー -->
-        <article class="l-sidebar">
-            <h2 class="p-side__menu-logo">Menu</h2>
+        <article class="l-sidebar p-side-menu">
+            <h2 class="p-side-menu-logo">Menu</h2>
             <!-- バーガー -->
-            <div class="p-side-menu">
-                <span class="c-close__button" id="c-close__button__js"></span>   <!-- レスポンシブ用閉じるボタン -->
+            <div class="p-gmenu">
+                <span class="c-close__button" id="js-close-button"></span>   <!-- レスポンシブ用閉じるボタン -->
                 <div class="p-sidebar__burger">
                     <h3 class="p-side__sub-menu-logo">バーガー</h3>
                     <ul>
@@ -79,7 +79,7 @@
                 <ul>
                     <!-- テイクアウト -->
                     <li class="p-take-out">
-                        <h2>Take Out</h2>   <!-- テイクアウト見出し -->
+                        <h2><a href="#">Take Out</a></h2>   <!-- テイクアウト見出し -->
                         <!-- テイクアウト説明文1 -->
                         <dl class="p-take-out__section1">
                             <dt>Take OUT</dt>
@@ -93,7 +93,7 @@
                     </li>
                     <!-- イートイン -->
                     <li class="p-eat-in">
-                        <h2>Eat In</h2> <!-- イートイン見出し -->
+                        <h2><a href="#">Eat In</a></h2> <!-- イートイン見出し -->
                         <!-- イートイン説明文1 -->
                         <dl class="p-eat-in__section1">
                             <dt>Eat IN</dt>

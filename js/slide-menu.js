@@ -1,6 +1,6 @@
 $(function() {
     // メニューボタンをクリックしたら
-    $("#c-button--menu--js").on("click", function() {
+    $("#js-menu-button").on("click", function() {
         // サイドバーがスライドして表示されて
         $(".l-sidebar").toggleClass("is-open");
         // コンテンツにマスクがかかる
@@ -9,7 +9,7 @@ $(function() {
         $('body').toggleClass('is-fixed');
     });
     // Xボタンをクリックしたら
-    $("#c-close__button__js").on("click", function() {
+    $("#js-close-button").on("click", function() {
         // サイドバーがスライドして非表示になって
         $(".l-sidebar").toggleClass("is-open");
         // コンテンツにかかっていたマスクが非表示になる

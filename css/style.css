@@ -497,7 +497,6 @@ h1 a {
 
 .p-take-out h2 {
   font-size: 41px;
-  color: #EAEAEA;
   font-family: 'Roboto', sans-serif;
   position: relative;
 }
@@ -512,6 +511,11 @@ h1 a {
   .p-take-out h2 {
     font-size: 70px;
   }
+}
+
+.p-take-out h2 a {
+  color: #EAEAEA;
+  text-decoration: none;
 }
 
 .p-take-out h2::before {
@@ -598,7 +602,6 @@ h1 a {
 
 .p-eat-in h2 {
   font-size: 41px;
-  color: #EAEAEA;
   font-family: 'Roboto', sans-serif;
   position: relative;
 }
@@ -613,6 +616,11 @@ h1 a {
   .p-eat-in h2 {
     font-size: 70px;
   }
+}
+
+.p-eat-in h2 a {
+  color: #EAEAEA;
+  text-decoration: none;
 }
 
 .p-eat-in h2::before {
@@ -728,7 +736,7 @@ h1 a {
   }
 }
 
-.p-side-menu {
+.p-gmenu {
   position: absolute;
   width: 100%;
   z-index: 1000;
@@ -738,24 +746,24 @@ h1 a {
 }
 
 @media (min-width: 600px) {
-  .p-side-menu {
+  .p-gmenu {
     width: 100%;
   }
 }
 
 @media (min-width: 1025px) {
-  .p-side-menu {
+  .p-gmenu {
     position: static;
     width: 100%;
   }
 }
 
-.p-side__menu-logo {
+.p-side-menu-logo {
   display: none;
 }
 
 @media (min-width: 1025px) {
-  .p-side__menu-logo {
+  .p-side-menu-logo {
     display: block;
     font-family: 'Roboto', sans-serif;
     font-size: 34px;
@@ -769,14 +777,14 @@ h1 a {
   color: #707070;
 }
 
-.p-side-menu ul li a {
+.p-gmenu ul li a {
   font-size: 20px;
   color: #707070;
   text-decoration: none;
 }
 
 @media (min-width: 1025px) {
-  .p-side-menu ul li a {
+  .p-gmenu ul li a {
     font-size: 1.4vw;
   }
 }
@@ -858,7 +866,7 @@ h1 a {
   margin-left: 7px;
 }
 
-.l-sidebar .p-side__menu-logo {
+.l-sidebar .p-side-menu-logo {
   margin: 82px 0 85px 45px;
 }
 
@@ -1013,22 +1021,22 @@ h1 a {
 }
 
 .p-take-out dt, .p-eat-in dt {
-  padding: 20px 0 0 10px;
+  padding: 20px 20px 0 20px;
 }
 
 @media (min-width: 1025px) {
   .p-take-out dt, .p-eat-in dt {
-    padding: 20px 0 0 20px;
+    padding: 20px 20px 0 20px;
   }
 }
 
 .p-take-out dd, .p-eat-in dd {
-  padding: 23px 0 0 10px;
+  padding: 23px 20px 0 20px;
 }
 
 @media (min-width: 1025px) {
   .p-take-out dd, .p-eat-in dd {
-    padding: 23px 0 0 20px;
+    padding: 23px 20px 0 20px;
   }
 }
 

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.p-side-menu {
+.p-gmenu {
     position: absolute;
     width: 100%;
     z-index: 1000;
@@ -16,7 +16,7 @@
         width: 100%;
     }
 }
-.p-side__menu-logo {
+.p-side-menu-logo {
     display: none;
     @include pc {
         display: block;
@@ -30,7 +30,7 @@
     font-weight: bold;
     color: #707070;
 }
-.p-side-menu ul li a {
+.p-gmenu ul li a {
     font-size: 20px;
     color: #707070;
     text-decoration: none;

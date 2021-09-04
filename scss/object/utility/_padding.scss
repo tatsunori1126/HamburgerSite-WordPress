@@ -12,16 +12,16 @@
 }
 // テイクアウト、イートイン説明文見出し
 .p-take-out dt, .p-eat-in dt {
-    padding: 20px 0 0 10px;
+    padding: 20px 20px 0 20px;
     @include pc {
-        padding: 20px 0 0 20px;
+        padding: 20px 20px 0 20px;
     }
 }
 // テイクアウト、イートイン説明文
 .p-take-out dd, .p-eat-in dd {
-    padding: 23px 0 0 10px;
+    padding: 23px 20px 0 20px;
     @include pc {
-        padding: 23px 0 0 20px;
+        padding: 23px 20px 0 20px;
     }
 }
 // フッター
