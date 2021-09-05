@@ -1,0 +1,29 @@
+@charset "UTF-8";
+.p-archive-top-visual {
+    background-image: url(/images/archive_top_img.png);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    align-items: center;
+    @include tab {
+        display: flex;
+    }
+    h2 {
+        color: #FFFFFF;
+        font-size: 36px;
+        font-family: 'Roboto', sans-serif;
+        @include tab {
+            font-size: 60px;
+        }
+        @include pc {
+            font-size: 60px; 
+        }
+    }
+    p {
+        color: #FFFFFF;
+        font-size: 16px;
+        font-weight: bold;
+    }
+}

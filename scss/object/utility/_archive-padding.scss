@@ -1,0 +1,36 @@
+@charset "UTF-8";
+.p-archive-top-visual {
+    padding: 100px 0 0 38px; 
+    @include tab {
+        padding: 0 0 0 85px;
+    }
+}
+.p-archive-main__heading-text {
+    padding: 0 20px 0 20px;
+    @include tab {
+        padding: 0 40px 0 40px;
+    }
+    @include pc {
+        padding: 0 100px 0 100px;
+    }
+}
+
+
+
+.p-archive-main-visual {
+    .p-burger-menu {
+        .p-menu_introduction {
+            &_sub {
+                padding: 32px 70px 0 20px;
+                @include tab {
+                    padding: 32px 40px 0 35px;
+                }
+            }
+            .detail {
+                a {
+                    padding: 10px 42px;
+                }
+            }
+        }
+    }
+}
