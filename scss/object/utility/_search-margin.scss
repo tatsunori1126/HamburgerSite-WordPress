@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.p-archive-top-visual {
+.p-search-top-visual {
     p {
         @include tab {
             margin-left: 20px; 
@@ -7,8 +7,8 @@
     }
 }
 
-.p-archive-menu-top {
-    .p-archive-main__heading-text {
+.p-search-menu-top {
+    .p-search-main__heading-text {
         h3 {
             margin: 30px 0 30px 0;
         }
@@ -16,7 +16,7 @@
 }
 
 
-.p-archive-main-visual {
+.p-search-main-visual {
     margin: 20px 20px 0 20px;
     @include tab {
         margin: 40px 40px 0 40px;
