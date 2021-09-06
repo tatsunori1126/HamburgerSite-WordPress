@@ -34,3 +34,22 @@
         }
     }
 }
+.p-arrow {
+    padding-top: 65px;
+    @include tab {
+        padding-top: 105px;
+    }
+    @include pc {
+        padding-top: 150px;
+    }
+    &-left-block {
+        .p-left-arrow {
+            padding: 0 0 15px 20px;
+        }
+    }
+    &-right-block {
+        .p-right-arrow {
+            padding: 0 0 15px 20px;
+        }
+    }
+}

@@ -28,7 +28,55 @@
             }
             .detail {
                 margin: 50px auto 45px;
+                @include pc {
+                    margin: 80px auto 0;
+                }
             }
+        }
+    }
+}
+
+.p-arrow {
+    &-left-block {
+        .p-left-arrow {
+            margin: 8px 0 0 0;
+        }
+        .p-left-arrow::before {
+            margin-top: -4px;
+        }
+        .p-left-arrow::after {
+            margin-top: -4px;
+        }
+        .p-page-display {
+            margin: 8px 0 0 10px;
+        }
+    }
+    .p-arrow-before-text {
+        margin-left: 20px;
+    }
+    .p-pagination {
+        &-box {
+            margin-left: 30px;
+            .p-pagination-namber {
+                @include tab {
+                    margin-right: 12px;
+                }
+                @include pc {
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+    &-right-block {
+        margin-right: 20px;
+        .p-right-arrow {
+            margin: 8px 0 0 0;
+        }
+        .p-right-arrow::before {
+            margin-top: -4px;
+        }
+        .p-right-arrow::after {
+            margin-top: -4px;
         }
     }
 }
