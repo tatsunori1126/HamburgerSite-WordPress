@@ -24,12 +24,12 @@
     @include pc {
         margin: 30px 100px 0 100px;
     }
-    .p-burger-menu {
-        .p-menu_introduction {
+    .p-archive-burger-menu {
+        .p-archive-menu_introduction {
             h5 {
                 margin: 25px 0 10px 0;
             }
-            .detail {
+            .p-archive-detail {
                 margin: 50px auto 45px;
                 @include pc {
                     margin: 80px auto 0;

@@ -18,15 +18,15 @@
 
 
 .p-archive-main-visual {
-    .p-burger-menu {
-        .p-menu_introduction {
+    .p-archive-burger-menu {
+        .p-archive-menu_introduction {
             &_sub {
                 padding: 32px 70px 0 20px;
                 @include tab {
                     padding: 32px 40px 0 35px;
                 }
             }
-            .detail {
+            .p-archive-detail {
                 a {
                     padding: 10px 42px;
                 }
