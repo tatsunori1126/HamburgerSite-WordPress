@@ -1,0 +1,48 @@
+@charset "UTF-8";
+.l-single-main {
+    .p-single-menu-top {
+        padding: 0 20px;
+        @include tab {
+            padding: 0 60px;
+        }
+        @include pc {
+            padding: 0 100px;
+        }
+        .p-single-main__heading-text {
+            .citation-block {
+                padding: 30px 20px 0;
+                @include tab {
+                    padding: 50px 50px 0;
+                }
+                .source {
+                    padding-bottom: 30px;
+                    @include tab {
+                        padding-bottom: 60px;
+                    }
+                }
+            }
+        }
+        .p-list-text {
+            .p-list-group-code {
+                padding: 50px 0 50px 50px;
+            }
+            .p-table-box {
+                &-short {
+                    padding-left: 30px;
+                }
+                &-long {
+                    padding-left: 30px;
+                }
+            }
+        }
+        .bold-text {
+            padding-bottom: 180px;
+            @include tab {
+                padding-bottom: 230px;
+            }
+            @include pc {
+                padding-bottom: 350px;
+            }
+        }
+    }
+}

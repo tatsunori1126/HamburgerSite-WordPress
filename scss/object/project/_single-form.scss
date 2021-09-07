@@ -1,18 +1,21 @@
 @charset "UTF-8";
 // 検索フォーム
-.p-search-form {
+.p-single-form {
     // 検索ボタン
     // ボタンのサイズなど細かい調整を記述する
     .c-button--submit {
         top: -3.5px;
-        height: 46px;
-        width: 80px;
-        border-radius: 10px;
+        height: 80px;
+        width: 100%;
+        color: #3C2A10;
+        font-weight: bold;
+        background-color: #F2EDE9;
+        border-radius: 20px;
         @include tab {
-            width: 136px;
+            width: 60%;
         }
         @include pc {
-            width: 80px;
+            width: 30%;
         }
     }
 }

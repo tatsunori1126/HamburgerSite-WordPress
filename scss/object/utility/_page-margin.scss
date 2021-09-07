@@ -1,0 +1,156 @@
+@charset "UTF-8";
+.l-page-main {
+    .p-page-top-visual {
+        h1 {
+            margin-left: 25px;
+            @include tab {
+                margin-left: 85px;
+            }
+            @include pc {
+                margin-left: 85px;
+            }
+        }
+    }
+    .p-page-menu-top {
+        .p-page-main__heading-text {
+            h2 {
+                margin: 30px 0;
+                @include tab {
+                    margin: 60px 0;
+                }
+                @include pc {
+                    margin: 60px 0;
+                }
+            }
+            h3 {
+                margin: 35px 0 30px;
+                @include tab {
+                    margin: 60px 0;
+                }
+                @include pc {
+                    margin: 60px 0;
+                }
+            }
+            h5 {
+                margin: 37px 0 30px;
+                @include tab {
+                    margin: 75px 0 60px;
+                }
+                @include pc {
+                    margin: 60px 0;
+                }
+            }
+            h6 {
+                margin-bottom: 30px;
+                @include tab {
+                    margin-bottom: 60px;
+                }
+                @include pc {
+                    margin-bottom: 60px;
+                }
+            }
+            .citation-block {
+                .source {
+                    margin: 30px 0 0 0;
+                    @include tab {
+                        margin: 60px 0 0 0;
+                    }
+                    @include pc {
+                        margin: 60px 0 0 0;
+                    }
+                    a {
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+        .p-page-main-visual {
+            .top-img {
+                margin: 30px 0;
+                @include tab {
+                    margin: 60px 0;
+                }
+            }
+            .p-page-right-img-box {
+                margin: 30px 0;
+                @include tab {
+                    margin: 120px 0 60px;
+                }
+                @include pc {
+                    margin: 60px 0;
+                }
+            }
+            .center-img {
+                margin: 0 auto;
+            }
+            .img-group {
+                margin: 30px 0;
+                @include tab {
+                    margin: 240px 0 60px;
+                }
+                @include pc {
+                    margin: 60px 0 53px;
+                }
+                &-solo {
+                    margin-bottom: 20px;
+                    @include tab {
+                        margin-bottom: 5px;
+                    }
+                    @include pc {
+                        margin-bottom: 0;
+                    }
+                }
+                &-solo:nth-child(9) {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .p-list-text {
+            .p-list-group-number {
+                @include tab {
+                    margin-left: 50px;
+                }
+                @include pc {
+                    margin-left: 50px;
+                }
+                li:nth-child(2) {
+                    margin: 20px 0 20px 20px;
+                }
+            }
+            .p-list-group-normal {
+                margin: 60px 0 30px;
+                @include tab {
+                    margin: 60px 0 60px 50px;
+                }
+                @include pc {
+                    margin: 60px 0 60px 50px;
+                }
+                li:nth-child(2) {
+                    margin: 20px 0 20px 20px;
+                }
+            }
+            .p-list-group-code {
+                &-sub {
+                    margin-left: 40px;
+                }
+            }
+            .p-table-box {
+                margin: 30px 0;
+                @include tab {
+                    margin: 60px 0;
+                }
+            }   
+        }
+        .bold-text {
+            margin-top: 30px;
+            @include tab {
+                margin-top: 60px;
+            }
+            @include pc {
+                margin-top: 60px;
+            }
+        }
+    }
+}
+
+
