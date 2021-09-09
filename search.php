@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HamburgerSite</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/hamburger.css">
     <!-- jQueryの読み込み -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
@@ -19,7 +19,9 @@
                 <button type="button" class="c-button--menu" id="js-menu-button">Menu</button>  <!-- レスポンシブ用メニューボタン -->
             </div>
             <div class="p-header__sub">
-                <h1><a href="front-page.html">Hamburger</a></h1>
+                <a href="front-page.html">
+                    <h1>Hamburger</h1>
+                </a>
                 <!-- 検索フォーム -->
                 <form action="#" class="p-search-form">
                     <input type="search" name="search" class="c-input--keyword" placeholder="&#xf002">
