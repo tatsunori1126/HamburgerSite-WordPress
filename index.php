@@ -1,6 +1,6 @@
-<?php get_header(); ?>
+<?php get_header(); ?>  <!-- header.phpを読み込む -->
         <!-- サイドバー -->
-        <?php get_sidebar(); ?>
+        <?php get_sidebar(); ?> <!-- sidebar.phpを読み込む -->
         <!-- メイン -->
         <div class="l-main">
             <div class="p-top-visual">  <!-- トップ画像 -->
@@ -51,8 +51,8 @@
             </section> 
         </div>
         <!-- フッター -->
-        <?php get_footer(); ?>
+        <?php get_footer(); ?>  <!-- footer.phpを読み込む -->
     </div>
-    <?php wp_footer(); ?>
+    <?php wp_footer(); ?>   <!-- WordPressでは記入必須 -->
 </body>
 </html>
