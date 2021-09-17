@@ -1,80 +1,11 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HamburgerSite</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/hamburger.css">
-    <!-- jQueryの読み込み -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-</head>
-<body>
-    <div class="l-container">
-        <div class="p-mask"></div>
-        <!-- ヘッダー -->
-        <header class="l-header">
-            <div class="p-button--responsive">
-                <button type="button" class="c-button--menu" id="js-menu-button">Menu</button>  <!-- レスポンシブ用メニューボタン -->
-            </div>
-            <div class="p-header__sub">
-                <a href="front-page.html">
-                    <h1>Hamburger</h1>
-                </a>
-                <!-- 検索フォーム -->
-                <form action="#" class="p-search-form">
-                    <input type="search" name="search" class="c-input--keyword" placeholder="&#xf002">
-                    <input type="submit" class="c-button--submit" value="検索">
-                </form>
-            </div>
-        </header>
+<?php get_header(); ?>  <!-- ヘッダーの読み込み -->
         <!-- サイドバー -->
-        <article class="l-sidebar p-side-menu">
-            <h2 class="p-side-menu-logo">Menu</h2>
-            <!-- バーガー -->
-            <div class="p-gmenu">
-                <span class="c-close__button" id="js-close-button"></span>   <!-- レスポンシブ用閉じるボタン -->
-                <div class="p-sidebar__burger">
-                    <h3 class="p-side__sub-menu-logo">バーガー</h3>
-                    <ul>
-                        <li><a href="#">ハンバーガー</a></li>
-                        <li><a href="#">チーズバーガー</a></li>
-                        <li><a href="#">テリヤキバーガー</a></li>
-                        <li><a href="#">アボカドバーガー</a></li>
-                        <li><a href="#">フィッシュバーガー</a></li>
-                        <li><a href="#">ベーコンバーガー</a></li>
-                        <li><a href="#">チキンバーガー</a></li>
-                    </ul>
-                </div>
-                <!-- サイド -->
-                <div class="p-sidebar__side">
-                    <h3 class="p-side__sub-menu-logo">サイド</h3>
-                    <ul>
-                        <li><a href="#">ポテト</a></li>
-                        <li><a href="#">サラダ</a></li>
-                        <li><a href="#">ナゲット</a></li>
-                        <li><a href="#">コーン</a></li>
-                    </ul>
-                </div>
-                <!-- ドリンク -->
-                <div class="p-sidebar__drink">
-                    <h3 class="p-side__sub-menu-logo">ドリンク</h3>
-                    <ul>
-                        <li><a href="#">コーラ</a></li>
-                        <li><a href="#">ファンタ</a></li>
-                        <li><a href="#">オレンジ</a></li>
-                        <li><a href="#">アップル</a></li>
-                        <li><a href="#">紅茶（Ice/Hot）</a></li>
-                        <li><a href="#">コーヒー（Ice/Hot）</a></li>
-                    </ul>
-                </div>
-            </div>
-        </article>
+        <?php get_sidebar(); ?> <!-- サイドバーの読み込み -->
         <!-- メイン -->
         <div class="l-single-main">
             <div class="p-single-top-visual">
-                <h1>h1 チーズバーガー</h1>
+                <?php the_post_thumbnail(); ?>  <!-- 各商品の投稿のアイキャッチ画像を投稿ページのトップ画像に表示 -->
+                <h1><?php the_title(); ?></h1>  <!-- 選択した商品の投稿タイトルを表示 -->
             </div>
             <div class="p-single-menu-top">
                 <div class="p-single-main__heading-text">
@@ -90,26 +21,26 @@
                     </div>
                 </div>
                 <div class="p-single-main-visual">
-                    <img class="top-img" src="images/single_main_img01.png" alt="ハンバーガーの写真">
+                    <img class="top-img" src="<?php echo get_template_directory_uri(); ?>/images/single_main_img01.png" alt="ハンバーガーの写真">
                     <section class="p-single-left-img-box">
-                        <img class="left-img" src="/images/single_main_img02.png" alt="ハンバーガーの写真">
+                        <img class="left-img" src="<?php echo get_template_directory_uri(); ?>/images/single_main_img02.png" alt="ハンバーガーの写真">
                         <p> テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります</p>
                     </section>
                     <section class="p-single-right-img-box">
                         <p> テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります</p>
-                        <img class="right-img" src="/images/single_main_img02.png" alt="ハンバーガーの写真">
+                        <img class="right-img" src="<?php echo get_template_directory_uri(); ?>/images/single_main_img02.png" alt="ハンバーガーの写真">
                     </section>
-                    <img class="center-img" src="images/single_main_img02.png" alt="ハンバーガーの写真">
+                    <img class="center-img" src="<?php echo get_template_directory_uri(); ?>/images/single_main_img02.png" alt="ハンバーガーの写真">
                     <div class="img-group">
-                        <img class="img-group-solo" src="/images/single_main_img02.png" alt="ハンバーガーの写真">
-                        <img class="img-group-solo" src="/images/single_main_img02.png" alt="ハンバーガーの写真">
-                        <img class="img-group-solo" src="/images/single_main_img02.png" alt="ハンバーガーの写真">
-                        <img class="img-group-solo" src="/images/single_main_img02.png" alt="ハンバーガーの写真">
-                        <img class="img-group-solo" src="/images/single_main_img02.png" alt="ハンバーガーの写真">
-                        <img class="img-group-solo" src="/images/single_main_img02.png" alt="ハンバーガーの写真">
-                        <img class="img-group-solo" src="/images/single_main_img02.png" alt="ハンバーガーの写真">
-                        <img class="img-group-solo" src="/images/single_main_img02.png" alt="ハンバーガーの写真">
-                        <img class="img-group-solo" src="/images/single_main_img02.png" alt="ハンバーガーの写真">
+                        <img class="img-group-solo" src="<?php echo get_template_directory_uri(); ?>/images/single_main_img02.png" alt="ハンバーガーの写真">
+                        <img class="img-group-solo" src="<?php echo get_template_directory_uri(); ?>/images/single_main_img02.png" alt="ハンバーガーの写真">
+                        <img class="img-group-solo" src="<?php echo get_template_directory_uri(); ?>/images/single_main_img02.png" alt="ハンバーガーの写真">
+                        <img class="img-group-solo" src="<?php echo get_template_directory_uri(); ?>/images/single_main_img02.png" alt="ハンバーガーの写真">
+                        <img class="img-group-solo" src="<?php echo get_template_directory_uri(); ?>/images/single_main_img02.png" alt="ハンバーガーの写真">
+                        <img class="img-group-solo" src="<?php echo get_template_directory_uri(); ?>/images/single_main_img02.png" alt="ハンバーガーの写真">
+                        <img class="img-group-solo" src="<?php echo get_template_directory_uri(); ?>/images/single_main_img02.png" alt="ハンバーガーの写真">
+                        <img class="img-group-solo" src="<?php echo get_template_directory_uri(); ?>/images/single_main_img02.png" alt="ハンバーガーの写真">
+                        <img class="img-group-solo" src="<?php echo get_template_directory_uri(); ?>/images/single_main_img02.png" alt="ハンバーガーの写真">
                     </div>
                 </div>
                 <div class="p-list-text">                
@@ -165,14 +96,4 @@
             </div>
         </div>
         <!-- フッター -->
-        <footer class="l-footer">
-            <ul class="p-footer__menu">
-                <li class="p-pseudo"><a href="page.html">ショップ情報</a></li>
-                <li><a href="#">ヒストリー</a></li>
-            </ul>
-            <p class="copyright">Copyright: RaiseTech</p>
-        </footer>
-    </div>
-    <script type="text/javascript" src="js/slide-menu.js"></script>
-</body>
-</html>
+<?php get_footer(); ?>  <!-- フッターの読み込み -->

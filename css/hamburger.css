@@ -1322,6 +1322,27 @@ h1 a {
   }
 }
 
+.p-gmenu .menu-item-55 > a {
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  color: #707070;
+}
+
+.p-gmenu .menu-item-63 > a {
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  color: #707070;
+}
+
+.p-gmenu .menu-item-68 > a {
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  color: #707070;
+}
+
 .p-side-menu-logo {
   display: none;
 }
@@ -1333,12 +1354,6 @@ h1 a {
     font-size: 34px;
     color: #707070;
   }
-}
-
-.p-side__sub-menu-logo {
-  font-size: 24px;
-  font-weight: bold;
-  color: #707070;
 }
 
 .p-gmenu ul li a {
@@ -1392,24 +1407,23 @@ h1 a {
   }
 }
 
-.p-single-top-visual {
-  background-image: url(../images/single_top_img.png);
-  background-size: cover;
-  background-position: center;
+.p-single-top-visual img {
+  object-fit: cover;
   height: 225px;
   width: 100%;
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 @media (min-width: 600px) {
-  .p-single-top-visual {
+  .p-single-top-visual img {
     height: 500px;
   }
 }
 
 @media (min-width: 1025px) {
-  .p-single-top-visual {
+  .p-single-top-visual img {
     height: 500px;
   }
 }
@@ -1418,16 +1432,21 @@ h1 a {
   color: #FFFFFF;
   font-size: 36px;
   font-family: 'Roboto', sans-serif;
+  position: absolute;
+  top: 310px;
+  left: 0;
 }
 
 @media (min-width: 600px) {
   .p-single-top-visual h1 {
+    top: 425px;
     font-size: 60px;
   }
 }
 
 @media (min-width: 1025px) {
   .p-single-top-visual h1 {
+    top: 425px;
     font-size: 60px;
   }
 }
@@ -2013,12 +2032,12 @@ h1 a {
 }
 
 .p-archive-main-visual .p-archive-burger-menu .p-archive-menu_introduction .p-archive-detail {
-  margin: 50px auto 45px;
+  margin: 100px auto 45px;
 }
 
 @media (min-width: 1025px) {
   .p-archive-main-visual .p-archive-burger-menu .p-archive-menu_introduction .p-archive-detail {
-    margin: 80px auto 0;
+    margin: 150px auto 0;
   }
 }
 
@@ -2174,6 +2193,18 @@ h1 a {
   margin-left: 7px;
 }
 
+.l-sidebar .p-gmenu .menu-item-55 > a {
+  margin-bottom: 40px;
+}
+
+.l-sidebar .p-gmenu .menu-item-63 > a {
+  margin-bottom: 40px;
+}
+
+.l-sidebar .p-gmenu .menu-item-68 > a {
+  margin-bottom: 40px;
+}
+
 .l-sidebar .p-side-menu-logo {
   margin: 82px 0 85px 45px;
 }
@@ -2198,12 +2229,8 @@ h1 a {
 
 @media (min-width: 1025px) {
   .l-sidebar .p-sidebar__burger, .l-sidebar .p-sidebar__side, .l-sidebar .p-sidebar__drink {
-    margin-left: 40px;
+    margin-left: 20px;
   }
-}
-
-.l-sidebar .p-sidebar__burger .p-side__sub-menu-logo, .l-sidebar .p-sidebar__side .p-side__sub-menu-logo, .l-sidebar .p-sidebar__drink .p-side__sub-menu-logo {
-  margin-bottom: 40px;
 }
 
 .l-sidebar .p-sidebar__burger ul, .l-sidebar .p-sidebar__side ul, .l-sidebar .p-sidebar__drink ul {

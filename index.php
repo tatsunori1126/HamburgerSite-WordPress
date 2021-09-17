@@ -11,7 +11,7 @@
                 <ul>
                     <!-- テイクアウト -->
                     <li class="p-take-out">
-                        <h2><a href="#">Take Out</a></h2>   <!-- テイクアウト見出し -->
+                        <h2><a href="<?php echo get_page_link(113); ?>">Take Out</a></h2>   <!-- テイクアウトの固定ページへ -->
                         <!-- テイクアウト説明文1 -->
                         <dl class="p-take-out__section1">
                             <dt>Take OUT</dt>
@@ -25,7 +25,7 @@
                     </li>
                     <!-- イートイン -->
                     <li class="p-eat-in">
-                        <h2><a href="#">Eat In</a></h2> <!-- イートイン見出し -->
+                        <h2><a href="<?php echo get_page_link(120); ?>">Eat In</a></h2> <!-- イートインの固定ページへ -->
                         <!-- イートイン説明文1 -->
                         <dl class="p-eat-in__section1">
                             <dt>Eat IN</dt>
@@ -52,7 +52,3 @@
         </div>
         <!-- フッター -->
         <?php get_footer(); ?>  <!-- footer.phpを読み込む -->
-    </div>
-    <?php wp_footer(); ?>   <!-- WordPressでは記入必須 -->
-</body>
-</html>

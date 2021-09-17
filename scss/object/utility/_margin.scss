@@ -28,6 +28,18 @@
 }
 // サイドバー
 .l-sidebar {
+    // ここからWordPress化で崩れたスタイルを修正
+    .p-gmenu {
+        .menu-item-55 > a {
+            margin-bottom: 40px;
+        }
+        .menu-item-63 > a {
+            margin-bottom: 40px;
+        }
+        .menu-item-68 > a {
+            margin-bottom: 40px;
+        }
+    }   //ここまで
     .p-side-menu-logo {
        margin: 82px 0 85px 45px;
     }
@@ -43,11 +55,11 @@
     .p-sidebar__burger, .p-sidebar__side, .p-sidebar__drink {
         margin-left: 45px;
         @include pc {
-            margin-left: 40px;
+            margin-left: 20px;
         }
-        .p-side__sub-menu-logo {
-            margin-bottom: 40px;
-        }
+        // .p-side__sub-menu-logo {
+            // margin-bottom: 40px;
+        // }
         ul {
             margin-left: 20px;
             li {

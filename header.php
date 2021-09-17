@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="<?php language_attributes(); ?>">
+<html lang="<?php language_attributes(); ?>">   <!-- 管理画面で設定した言語を出力 -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +7,7 @@
     <?php wp_head(); ?> <!-- WordPressでは記入必須 -->
 </head>
 <body <?php body_class(); ?>>
+    <?php wp_body_open(); ?>
     <div class="l-container">
         <div class="p-mask"></div>
         <!-- ヘッダー -->

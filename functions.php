@@ -23,18 +23,16 @@
         wp_enqueue_script( 'slide-menu', get_theme_file_uri('/js/slide-menu.js'), array('jquery'), '1.0.0', true );     //自分で作ったJavaScriptファイルの読み込み
     }
     add_action( 'wp_enqueue_scripts', 'hamburger_script' );
-
-    function hamburger_widgets_init() {
-        register_sidebar (
-            array(
-                'name'          => 'All Menu',
-                'id'            => 'menu_widget',
-                'description'   => 'メニューの一覧です',
-                'before_widget' => '<div id="%1$s" class="widget %2$s">',
-                'after_widget'  => '</div>',
-                'before_title'  => '<h2 class="c-category-title">',
-                'after_title'   => "</h2>\n",
-            )
-        );
+    
+    // サイドバーにメニューを表示
+    function register_my_menus() {
+        register_nav_menus( array(  //複数のナビゲーションメニューを登録する関数
+        //'管理画面のカスタムメニューの「メニューの位置」の識別子' => 'メニューの説明の文字列'
+        'global' => 'グローバル',
+        'side'   => 'サイド',
+        'footer' => 'フッター'
+        ) );
     }
-    add_action( 'widgets_init', 'hamburger_widgets_init' );
+    add_action( 'after_setup_theme', 'register_my_menus' );
+
+    

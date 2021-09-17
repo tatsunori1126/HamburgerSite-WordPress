@@ -1,26 +1,32 @@
 @charset "UTF-8";
 .p-single-top-visual {
-    background-image: url(../images/single_top_img.png);
-    background-size: cover;
-    background-position: center;
-    height: 225px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    @include tab {
-        height: 500px;
-    }
-    @include pc {
-        height: 500px;
+    img {
+        object-fit: cover;
+        height: 225px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+        @include tab {
+            height: 500px;
+        }
+        @include pc {
+            height: 500px;
+        }
     }
     h1 {
         color: #FFFFFF;
         font-size: 36px;
         font-family: 'Roboto', sans-serif;
+        position: absolute;
+        top: 310px;
+        left: 0;
         @include tab {
+            top: 425px;
             font-size: 60px;
         }
         @include pc {
+            top: 425px;
             font-size: 60px; 
         }
     }
