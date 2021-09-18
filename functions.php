@@ -1,5 +1,6 @@
 <?php
     //テーマサポート
+    add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption' ) ); //必ず記述する
     add_theme_support( 'menus' );   //メニュー
     add_theme_support( 'title-tag' );   //<title>タグを出力する
     add_theme_support( 'post-thumbnails' );     //アイキャッチ画像を扱えるようにする
@@ -34,5 +35,4 @@
         ) );
     }
     add_action( 'after_setup_theme', 'register_my_menus' );
-
     

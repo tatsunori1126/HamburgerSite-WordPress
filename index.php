@@ -1,3 +1,15 @@
+<?php
+    $get_page_id = get_page_by_path( "takeout" );   //TakeOutの固定ページのスラッグを$get_page_idに代入
+    // var_dump( $get_page_id );    //IDが返ってきているか確認するためのコード
+    if ( $get_page_id ) {
+        $get_page_id_takeout = $get_page_id->ID;        //返ってきたIDを変数に入れて、その変数をget_page_link(この中に記述$get_page_id_takeout);
+    }
+    
+    $get_page_id = get_page_by_path( "eatin" );
+    if ( $get_page_id ) {
+        $get_page_id_eatin = $get_page_id->ID;
+    }
+?>
 <?php get_header(); ?>  <!-- header.phpを読み込む -->
         <!-- サイドバー -->
         <?php get_sidebar(); ?> <!-- sidebar.phpを読み込む -->
@@ -11,7 +23,11 @@
                 <ul>
                     <!-- テイクアウト -->
                     <li class="p-take-out">
-                        <h2><a href="<?php echo get_page_link(113); ?>">Take Out</a></h2>   <!-- テイクアウトの固定ページへ -->
+                        <?php if ( $get_page_id_takeout ) : ?>
+                            <h2><a href="<?php echo get_page_link( $get_page_id_takeout ); ?>">Take Out</a></h2>   <!-- テイクアウトの固定ページへ -->
+                        <?php else : ?>
+                            <h2>Take Out</h2>
+                        <?php endif; ?>
                         <!-- テイクアウト説明文1 -->
                         <dl class="p-take-out__section1">
                             <dt>Take OUT</dt>
@@ -25,7 +41,11 @@
                     </li>
                     <!-- イートイン -->
                     <li class="p-eat-in">
-                        <h2><a href="<?php echo get_page_link(120); ?>">Eat In</a></h2> <!-- イートインの固定ページへ -->
+                        <?php if ( $get_page_id_eatin ) : ?>
+                            <h2><a href="<?php echo get_page_link( $get_page_id_eatin ); ?>">Eat In</a></h2> <!-- イートインの固定ページへ -->
+                        <?php else : ?>
+                            <h2>Eat In</h2>
+                        <?php endif; ?>
                         <!-- イートイン説明文1 -->
                         <dl class="p-eat-in__section1">
                             <dt>Eat IN</dt>

@@ -3,22 +3,27 @@
     font-size: 20px;
     display: flex;
     justify-content: center;
-    .p-pseudo {
-        position: relative; //擬似要素を使うため（縦の装飾線）
-    }
-    .p-pseudo::before {
-        content: "";    //擬似要素で必須
-        display: block;
-        width: 2px;    //装飾線の太さ
-        height: 22px;    //装飾線の長さ
-        background-color: #FFFFFF;  //装飾線の色
-        position: absolute; //ショップ情報の位置を基準とする
-        top: 5px; //ショップ情報の位置から下に5px移動
-        left: 135px;    //ショップ情報の位置から右に135px移動
-    }        
-    a {
-        text-decoration: none;
-        color: #FFFFFF;
+    .footer-class ul {
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        .menu-item-110 {
+            position: relative; //擬似要素を使うため（縦の装飾線）
+        }
+        .menu-item-110::before {
+            content: "";    //擬似要素で必須
+            display: block;
+            width: 2px;    //装飾線の太さ
+            height: 22px;    //装飾線の長さ
+            background-color: #FFFFFF;  //装飾線の色
+            position: absolute; //ショップ情報の位置を基準とする
+            top: 5px; //ショップ情報の位置から下に5px移動
+            left: 135px;    //ショップ情報の位置から右に135px移動
+        }
+        a {
+            text-decoration: none;
+            color: #FFFFFF;
+        }
     }
 }
 .copyright {

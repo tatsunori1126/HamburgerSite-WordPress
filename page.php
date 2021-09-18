@@ -23,26 +23,26 @@
                             </div>
                         </div>
                         <div class="p-page-main-visual">
-                            <img class="top-img" src="<?php echo get_template_directory_uri(); ?>/images/page_main_img01.png" alt="ハンバーガーの写真">
+                            <img class="top-img" src="<?php echo get_theme_file_uri( '/images/page_main_img01.png' ); ?>" alt="ハンバーガーの写真">
                             <section class="p-page-left-img-box">
-                                <img class="left-img" src="<?php echo get_template_directory_uri(); ?>/images/page_main_img02.png" alt="ハンバーガーの写真">
+                                <img class="left-img" src="<?php echo get_theme_file_uri( '/images/page_main_img02.png' ); ?>" alt="ハンバーガーの写真">
                                 <p> テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります</p>
                             </section>
                             <section class="p-page-right-img-box">
                                 <p> テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります</p>
-                                <img class="right-img" src="<?php echo get_template_directory_uri(); ?>/images/page_main_img02.png" alt="ハンバーガーの写真">
+                                <img class="right-img" src="<?php echo get_theme_file_uri( '/images/page_main_img02.png' ); ?>" alt="ハンバーガーの写真">
                             </section>
-                            <img class="center-img" src="<?php echo get_template_directory_uri(); ?>/images/page_main_img02.png" alt="ハンバーガーの写真">
+                            <img class="center-img" src="<?php echo get_theme_file_uri( '/images/page_main_img02.png' ); ?>" alt="ハンバーガーの写真">
                             <div class="img-group">
-                                <img class="img-group-solo" src="<?php echo get_template_directory_uri(); ?>/images/page_main_img02.png" alt="ハンバーガーの写真">
-                                <img class="img-group-solo" src="<?php echo get_template_directory_uri(); ?>/images/page_main_img02.png" alt="ハンバーガーの写真">
-                                <img class="img-group-solo" src="<?php echo get_template_directory_uri(); ?>/images/page_main_img02.png" alt="ハンバーガーの写真">
-                                <img class="img-group-solo" src="<?php echo get_template_directory_uri(); ?>/images/page_main_img02.png" alt="ハンバーガーの写真">
-                                <img class="img-group-solo" src="<?php echo get_template_directory_uri(); ?>/images/page_main_img02.png" alt="ハンバーガーの写真">
-                                <img class="img-group-solo" src="<?php echo get_template_directory_uri(); ?>/images/page_main_img02.png" alt="ハンバーガーの写真">
-                                <img class="img-group-solo" src="<?php echo get_template_directory_uri(); ?>/images/page_main_img02.png" alt="ハンバーガーの写真">
-                                <img class="img-group-solo" src="<?php echo get_template_directory_uri(); ?>/images/page_main_img02.png" alt="ハンバーガーの写真">
-                                <img class="img-group-solo" src="<?php echo get_template_directory_uri(); ?>/images/page_main_img02.png" alt="ハンバーガーの写真">
+                                <img class="img-group-solo" src="<?php echo get_theme_file_uri( '/images/page_main_img02.png' ); ?>" alt="ハンバーガーの写真">
+                                <img class="img-group-solo" src="<?php echo get_theme_file_uri( '/images/page_main_img02.png' ); ?>" alt="ハンバーガーの写真">
+                                <img class="img-group-solo" src="<?php echo get_theme_file_uri( '/images/page_main_img02.png' ); ?>" alt="ハンバーガーの写真">
+                                <img class="img-group-solo" src="<?php echo get_theme_file_uri( '/images/page_main_img02.png' ); ?>" alt="ハンバーガーの写真">
+                                <img class="img-group-solo" src="<?php echo get_theme_file_uri( '/images/page_main_img02.png' ); ?>" alt="ハンバーガーの写真">
+                                <img class="img-group-solo" src="<?php echo get_theme_file_uri( '/images/page_main_img02.png' ); ?>" alt="ハンバーガーの写真">
+                                <img class="img-group-solo" src="<?php echo get_theme_file_uri( '/images/page_main_img02.png' ); ?>" alt="ハンバーガーの写真">
+                                <img class="img-group-solo" src="<?php echo get_theme_file_uri( '/images/page_main_img02.png' ); ?>" alt="ハンバーガーの写真">
+                                <img class="img-group-solo" src="<?php echo get_theme_file_uri( '/images/page_main_img02.png' ); ?>" alt="ハンバーガーの写真">
                             </div>
                         </div>
                         <div class="p-list-text">                
