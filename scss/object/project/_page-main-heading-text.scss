@@ -1,41 +1,39 @@
 @charset "UTF-8";
 .p-page-menu-top {
-    .p-page-main__heading-text {
-        color: #3C2A10;
-        h2 {
-            font-size: 28px;
-            font-weight: bold;
-        }
-        .ptag-text {
+    color: #3C2A10;
+    h2 {
+        font-size: 28px;
+        font-weight: bold;
+    }
+    .ptag-text {
+        font-size: 16px;
+    }
+    h3 {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    h4 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    h5 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    h6 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .citation-block {
+        background-color: #F5F5F5;
+        .blockquote {
             font-size: 16px;
         }
-        h3 {
-            font-size: 24px;
-            font-weight: bold;
-        }
-        h4 {
-            font-size: 20px;
-            font-weight: bold;
-        }
-        h5 {
-            font-size: 20px;
-            font-weight: bold;
-        }
-        h6 {
-            font-size: 20px;
-            font-weight: bold;
-        }
-        .citation-block {
-            background-color: #F5F5F5;
-            .blockquote {
-                font-size: 16px;
-            }
-            .source {
-                font-size: 16px;
-                a {
-                    color: #4A6C9B;
-                }
+        .source {
+            font-size: 16px;
+            a {
+                color: #4A6C9B;
             }
         }
-    }
+    }     
 }

@@ -1,9 +1,8 @@
 @charset "UTF-8";
 // 検索フォーム
-.p-page-form {
     // 検索ボタン
     // ボタンのサイズなど細かい調整を記述する
-    .c-button--submit {
+    .c-button--submit .is-style-outline{
         top: -3.5px;
         height: 80px;
         width: 100%;
@@ -18,4 +17,3 @@
             width: 30%;
         }
     }
-}
