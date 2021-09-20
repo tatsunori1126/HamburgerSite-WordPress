@@ -36,3 +36,15 @@
     }
     add_action( 'after_setup_theme', 'register_my_menus' );
     
+    // 空欄・スペース検索の結果を変更する関数（結果非表示）
+    function mycus_empty_and_blank_search_invalid_func( $search, \WP_Query $q ) {
+        if ( $q->is_search() && $q->is_main_query() && ! $q->is_admin() ) {
+            $s = $q->get( 's' );
+            $s = trim( $s );
+            if ( empty( $s ) ) {
+                $search .=" AND 0=1 ";
+            }
+        }
+        return $search;
+    }
+    add_filter( 'posts_search', 'mycus_empty_and_blank_search_invalid_func', 10, 2 );
