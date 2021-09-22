@@ -29,14 +29,8 @@
 // サイドバー
 .l-sidebar {
     // ここからWordPress化で崩れたスタイルを修正
-    .p-gmenu {
-        .menu-item-55 > a {
-            margin-bottom: 40px;
-        }
-        .menu-item-63 > a {
-            margin-bottom: 40px;
-        }
-        .menu-item-68 > a {
+    .add-class {
+        ul .menu-item-type-taxonomy > a {
             margin-bottom: 40px;
         }
     }   //ここまで

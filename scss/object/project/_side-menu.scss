@@ -16,23 +16,13 @@
         width: 100%;
     }
     // ここからWordPress化で崩れたスタイルを修正
-    .menu-item-55 > a {
-        display: block;
-        font-size: 24px;
-        font-weight: bold;
-        color: #707070;
-    }
-    .menu-item-63 > a {
-        display: block;
-        font-size: 24px;
-        font-weight: bold;
-        color: #707070;
-    }
-    .menu-item-68 > a {
-        display: block;
-        font-size: 24px;
-        font-weight: bold;
-        color: #707070;
+    .add-class {
+        ul .menu-item-type-taxonomy > a {
+            display: block;
+            font-size: 24px;
+            font-weight: bold;
+            color: #707070;
+        }
     }
     // ここまで
 }

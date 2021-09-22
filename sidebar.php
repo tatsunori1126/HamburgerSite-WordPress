@@ -9,7 +9,7 @@
             // カスタムメニューの「メニューの位置」を'side'にしているのでその内容をサイドバーに表示
             wp_nav_menu( array(
                 'theme_location' => 'side',
-                'container' => 'nav',
+                'container' => 'div',
                 'container_class' => 'add-class'
             ));
         ?>

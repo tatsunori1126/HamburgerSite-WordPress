@@ -1,0 +1,25 @@
+.l-error-404-main {
+    .error-404 {
+        width: 90%;
+        color: #3C2A10;
+        height: 1200px;
+        .error-404-title {
+            font-size: 20px;
+            @include tab {
+                font-size: 30px;
+            }
+            @include pc {
+                font-size: 40px;
+            }
+        }
+        p {
+            font-size: 16px;
+            @include tab {
+                font-size: 18px;
+            }
+            @include pc {
+                font-size: 20px;
+            }
+        }
+    }
+}

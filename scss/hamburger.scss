@@ -21,6 +21,7 @@
    @import "layout/footer";
    @import "layout/single-main";
    @import "layout/page-main";
+   @import "layout/error-404-main";
 
 /* ==========================================================================
    Object
@@ -31,6 +32,7 @@
    
    @import "object/component/button";
    @import "object/component/form";
+   @import "object/component/error-404";
    
 /* Project
    ----------------------------------------------------------------- */
@@ -80,3 +82,5 @@
    @import "object/utility/single-padding";
    @import "object/utility/page-margin";
    @import "object/utility/page-padding";
+   @import "object/utility/error-404-margin";
+   @import "object/utility/error-404-padding";

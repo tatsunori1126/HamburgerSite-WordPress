@@ -83,3 +83,24 @@
         }
     }
 }
+.p-arrow {
+    .p-pagination {
+        .wp-pagenavi {
+            a, span {
+                @include tab {
+                    margin-right: 15px;
+                }
+                @include pc {
+                    margin-right: 15px;
+                }
+            }
+            .previouspostslink {
+                margin-left: 20px;
+            }
+            .nextpostslink {
+                margin-right: 20px;
+            }
+        }
+    }
+}
+    

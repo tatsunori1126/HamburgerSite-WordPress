@@ -1,0 +1,11 @@
+.l-error-404-main {
+    .error-404 {
+        margin: 0 auto;
+        p {
+            margin-top: 30px;
+            @include pc {
+                margin-top: 50px;
+            }
+        }
+    }
+}
