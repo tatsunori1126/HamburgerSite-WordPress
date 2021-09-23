@@ -20,7 +20,7 @@
         <h2>ダミーサイト</h2>   <!-- トップ画像見出し -->
     </div>
     <!-- ブランチメニュー -->
-    <div class="p-branch-menu">
+    <div id="post-<?php the_ID(); ?>" <?php post_class('p-branch-menu'); ?>>
         <ul>
             <!-- テイクアウト -->
             <li class="p-take-out">

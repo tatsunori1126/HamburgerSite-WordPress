@@ -14,6 +14,7 @@
     <div class="p-single-main__heading-text">
         <h2 class="p-single-main-text"><?php the_title(); ?></h2>
         <?php the_content(); ?>
+        <?php wp_link_pages(); ?>
     </div>      
 </div>
     <?php
