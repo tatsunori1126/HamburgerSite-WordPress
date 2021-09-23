@@ -14,9 +14,6 @@
         padding: 0 100px 0 100px;
     }
 }
-
-
-
 .p-search-main-visual {
     .p-search-burger-menu {
         .p-search-menu_introduction {
@@ -41,15 +38,5 @@
     }
     @include pc {
         padding-top: 150px;
-    }
-    &-left-block {
-        .p-left-arrow {
-            padding: 0 0 15px 20px;
-        }
-    }
-    &-right-block {
-        .p-right-arrow {
-            padding: 0 0 15px 20px;
-        }
     }
 }

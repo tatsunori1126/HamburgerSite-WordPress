@@ -40,26 +40,6 @@
                     white-space: nowrap;
                 }
             }
-            h5 {
-                font-size: 16px;
-                font-weight: bold;
-                @include tab {
-                    font-size: 2vw;
-                }
-                @include pc {
-                    font-size: 2vw;
-                }
-            }
-            p {
-                font-size: 16px;
-                font-weight: normal;
-                @include tab {
-                    font-size: 2vw;
-                }
-                @include pc {
-                    font-size: 16px;
-                }
-            }
             .p-search-detail {
                 text-align: center;
                 a {
@@ -88,7 +68,6 @@
         }
     }
 }
-
 .no-result {
     color: #3C2A10;
 }

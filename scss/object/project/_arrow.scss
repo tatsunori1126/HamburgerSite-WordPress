@@ -12,11 +12,6 @@
         height: 250px;
         justify-content: center;
     }
-    &-left-block {
-        @include tab {
-            display: flex;
-        }
-    }
     .p-arrow-text {
         color: #707070;
         text-decoration: none;
@@ -25,7 +20,6 @@
         }
     }
 }
-
 .wp-pagenavi {
     text-align: center;
     line-height: 28px;

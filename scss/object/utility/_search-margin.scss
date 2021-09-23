@@ -6,7 +6,6 @@
         }
     }
 }
-
 .p-search-menu-top {
     .p-search-main__heading-text {
         h3 {
@@ -14,8 +13,6 @@
         }
     }
 }
-
-
 .p-search-main-visual {
     margin: 20px 20px 0 20px;
     @include tab {
@@ -26,9 +23,6 @@
     }
     .p-search-burger-menu {
         .p-search-menu_introduction {
-            h5 {
-                margin: 25px 0 10px 0;
-            }
             .p-search-detail {
                 margin: 50px auto 45px;
                 @include pc {
@@ -38,7 +32,6 @@
         }
     }
 }
-
 .no-result {
     margin: 50px 20px 0 20px;
     @include tab {
@@ -46,50 +39,5 @@
     }
     @include pc {
         margin: 50px 100px 500px 100px;
-    }
-}
-
-.p-arrow {
-    &-left-block {
-        .p-left-arrow {
-            margin: 8px 0 0 0;
-        }
-        .p-left-arrow::before {
-            margin-top: -4px;
-        }
-        .p-left-arrow::after {
-            margin-top: -4px;
-        }
-        .p-page-display {
-            margin: 8px 0 0 10px;
-        }
-    }
-    .p-arrow-before-text {
-        margin-left: 20px;
-    }
-    .p-pagination {
-        &-box {
-            margin-left: 30px;
-            .p-pagination-namber {
-                @include tab {
-                    margin-right: 12px;
-                }
-                @include pc {
-                    margin-right: 15px;
-                }
-            }
-        }
-    }
-    &-right-block {
-        margin-right: 20px;
-        .p-right-arrow {
-            margin: 8px 0 0 0;
-        }
-        .p-right-arrow::before {
-            margin-top: -4px;
-        }
-        .p-right-arrow::after {
-            margin-top: -4px;
-        }
     }
 }
