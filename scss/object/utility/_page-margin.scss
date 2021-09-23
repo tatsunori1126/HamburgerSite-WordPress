@@ -90,8 +90,15 @@
             @include pc {
                 margin: 45px 0 15px;
             }
-            figure img:nth-child(9) {
-                margin-bottom: 0;
+            ul {
+                li {
+                    @include tab {
+                        margin: 0;
+                    }
+                    figure img:nth-child(9) {
+                        margin-bottom: 0;
+                    }
+                }
             }
         }
     }
@@ -127,6 +134,17 @@
         margin: 30px 0;
         @include tab {
             margin: 60px 0;
+        }
+        table {
+            tbody {
+                tr {
+                    td {
+                        span {
+                            margin-left: 30px;
+                        }
+                    }
+                }
+            }
         }
     }   
     

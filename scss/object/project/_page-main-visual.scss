@@ -11,15 +11,18 @@
             @include pc {
                 height: 620px;
             }
-            figure img {
+            figure {
                 width: 100%;
-                height: 124px;
-                object-fit: cover;
-                @include tab {
-                    height: 265px;
-                }
-                @include pc {
-                    height: 500px;
+                img {
+                    width: 100%;
+                    height: 124px;
+                    object-fit: cover;
+                    @include tab {
+                        height: 265px;
+                    }
+                    @include pc {
+                        height: 500px;
+                    }
                 }
             }
         }
@@ -38,11 +41,11 @@
                 object-fit: cover;
                 object-position: center;
                 @include tab {
-                    width: 90%;
+                    width: 100%;
                     height: 190px;
                 }
                 @include pc {
-                    width: 90%;
+                    width: 100%;
                     height: 360px;
                 }
             }
@@ -65,18 +68,29 @@
             @include pc {
                 height: 350px;
             }
-            figure img {
-                width: 90%;
-                height: 90px;
-                object-fit: cover;
-                object-position: center;
-                @include tab {
-                    width: 90%;
-                    height: 190px;
-                }
-                @include pc {
-                    width: 90%;
-                    height: 360px;
+            .wp-block-image {
+                width: 100%;
+                height: 100%;
+                figure {
+                    width: 100%;
+                    height: 100%;
+                    img {
+                        width: 90%;
+                        height: 90px;
+                        object-fit: cover;
+                        object-position: center;
+                        float: right;
+                        @include tab {
+                            width: 100%;
+                            height: 190px;
+                            float: right;
+                        }
+                        @include pc {
+                            width: 100%;
+                            height: 360px;
+                            float: right;
+                        }
+                    } 
                 }
             }
             p {
@@ -88,21 +102,27 @@
                     height: 360px;
                 }
             }
-        }
-        
+        }    
     }
     .center-img-bottom {
-        figure img {
-            display: block;
-            width: 100%;
-            height: 165px;
-            object-fit: cover;
-            @include tab {
-                height: 360px;
-            }
+        figure {
+            width: 85%;
+            img {
+                display: block;
+                width: 100%;
+                height: 165px;
+                object-fit: cover;
+                @include tab {
+                    width: 100%;
+                    height: 360px;
+                }
+            } 
         }
     }
     .img-group {
+        .wp-block-gallery {
+            display: block;
+        }
         ul {
             @include tab {
                 display: grid;
@@ -113,12 +133,14 @@
                 grid-template-columns: 1fr 1fr 1fr;
                 gap: 20px;
             }
-            figure img {
-                width: 100%;
-                height: 205px;
-                object-fit: cover;
-                @include pc {
-                    height: 357px;
+            li {
+                figure img {
+                    width: 100%;
+                    height: 205px;
+                    object-fit: cover;
+                    @include pc {
+                        height: 357px;
+                    }
                 }
             }
         }

@@ -12,12 +12,12 @@
         } elseif ( is_singular() ) { //シングルページなら
             $title = single_post_title( '', false ); //タイトルは投稿記事のタイトルにする
         }
-            return $title;
-        }
+        return $title;
+    }
     add_filter( 'pre_get_document_title', 'hamburger_title' );
 
     function hamburger_script() {
-        wp_enqueue_style( 'font-awesome', '//use.fontawesome.com/releases/v5.15.0/css/all.css', array(), 'v5.15.0' );   //Font Awesomeの読み込み
+        wp_enqueue_style( 'font-awesome', '//use.fontawesome.com/releases/v5.15.0/css/all.css' , array(), 'v5.15.0');   //FontAwesomeの読み込み
         wp_enqueue_style( 'hamburger', get_theme_file_uri (  '/css/hamburger.css' ), array(), '1.0.0' );     //自分で作成したテーマ用CSSファイルの読み込み
         wp_enqueue_style( 'style', get_theme_file_uri (  '/style.css' ), array(), '1.0.0' );       //テーマデフォルトstyle.cssの読み込み
         wp_enqueue_script( 'jquery', '//code.jquery.com/jquery-3.6.0.min.js', "", "3.6.0", true );      //CDNのjQuery本体の読み込み
@@ -48,3 +48,4 @@
         return $search;
     }
     add_filter( 'posts_search', 'mycus_empty_and_blank_search_invalid_func', 10, 2 );
+

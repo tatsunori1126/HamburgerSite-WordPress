@@ -1,15 +1,16 @@
 @charset "UTF-8";
-// 検索フォーム
-    // 検索ボタン
-    // ボタンのサイズなど細かい調整を記述する
-    .c-button--submit .is-style-outline{
+// ボタン
+// ボタンのサイズなど細かい調整を記述する
+.wp-block-buttons {
+    display: block;
+    width: 100%;
+    .c-button--submit .is-style-outline {
         top: -3.5px;
         height: 80px;
         width: 100%;
         color: #3C2A10;
         font-weight: bold;
         background-color: #F2EDE9;
-        border-radius: 20px;
         @include tab {
             width: 60%;
         }
@@ -17,3 +18,18 @@
             width: 30%;
         }
     }
+    .is-style-outline > .wp-block-button__link {
+        border: none;
+    }
+    > .wp-block-button:last-child {
+        width: 100%;
+        @include tab {
+            width: 60%;
+        }
+        @include pc {
+            width: 30%;
+        }
+    }
+
+}
+    

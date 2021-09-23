@@ -9,17 +9,27 @@
             background-color: #F5F5F5;
         }
         .p-table-box {
-            border-collapse: collapse;
-            width: 100%;
-            &-short {
-                width: 30%;
-                height: 80px;
-                border: 1px solid #707070;
-            }
-            &-long {
-                width: 70%;
-                height: 80px;
-                border: 1px solid #707070;
+            table {
+                tbody {
+                    tr {
+                        border: 1px solid #707070;
+                        height: 80px;
+                        td {
+                            border: 1px solid #707070;
+                        }
+                        .has-text-align-left {
+                            width: 70%;
+                        }
+                    }
+                    &-short {
+                        width: 30%;
+                        height: 80px;
+                    }
+                    &-long {
+                        width: 70%;
+                        height: 80px;
+                    }
+                }
             }        
         }
         .bold-text {
