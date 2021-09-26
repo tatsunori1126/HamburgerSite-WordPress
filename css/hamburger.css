@@ -541,10 +541,10 @@ body.is-fixed::before {
   background-color: #FFFFFF;
   color: #707070;
   text-decoration: none;
-  width: 50%;
-  height: 40px;
+  width: 60%;
+  height: 50px;
   border-radius: 20px;
-  line-height: 20px;
+  line-height: 30px;
   font-size: 16px;
 }
 
@@ -1201,10 +1201,10 @@ h1 a {
   background-color: #FFFFFF;
   color: #707070;
   text-decoration: none;
-  width: 50%;
-  height: 40px;
+  width: 60%;
+  height: 50px;
   border-radius: 20px;
-  line-height: 20px;
+  line-height: 30px;
   font-size: 16px;
 }
 
