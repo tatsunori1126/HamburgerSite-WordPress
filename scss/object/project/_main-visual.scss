@@ -29,6 +29,9 @@
             color: #EAEAEA;
             text-decoration: none;
         }
+        a:hover {
+            color: #FFCC33;
+        }
     }
     // テイクアウト見出しの装飾線
     h2::before {
@@ -104,6 +107,10 @@
             color: #EAEAEA;
             text-decoration: none;
         }
+        a:hover {
+            color: #FFCC33;
+        }
+
     }
     // イートイン見出しの装飾線
     h2::before {

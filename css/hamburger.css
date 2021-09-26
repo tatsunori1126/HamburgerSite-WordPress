@@ -64,6 +64,7 @@ button,
 textarea,
 select {
   font: inherit;
+  border-radius: 0;
 }
 
 /* Remove all animations and transitions for people that prefer not to see them */
@@ -169,7 +170,7 @@ body.is-fixed::before {
 
 .l-sidebar {
   display: block;
-  position: absolute;
+  position: fixed;
   height: 100vh;
   top: 0;
   left: 100%;
@@ -247,7 +248,7 @@ body.is-fixed::before {
 .c-close__button {
   display: block;
   position: relative;
-  top: 40px;
+  top: 80px;
   text-align: right;
   cursor: pointer;
 }
@@ -278,7 +279,7 @@ body.is-fixed::before {
 }
 
 .c-input--keyword {
-  width: 230px;
+  width: 200px;
   padding-left: 10px;
   display: inline-block;
   font-family: "Font Awesome 5 Free";
@@ -564,6 +565,11 @@ body.is-fixed::before {
   }
 }
 
+.p-archive-main-visual .p-archive-burger-menu .p-archive-menu_introduction .p-archive-detail a:hover {
+  color: #000000;
+  background-color: #FFCC33;
+}
+
 .p-archive-top-back {
   background-color: #000000;
   width: 100%;
@@ -802,6 +808,10 @@ body.is-fixed::before {
   color: #FFFFFF;
 }
 
+.p-footer__menu .footer-class ul a:hover {
+  color: #FFCC33;
+}
+
 .copyright {
   font-size: 14px;
   color: #FFFFFF;
@@ -875,6 +885,10 @@ h1 a {
 .p-take-out h2 a {
   color: #EAEAEA;
   text-decoration: none;
+}
+
+.p-take-out h2 a:hover {
+  color: #FFCC33;
 }
 
 .p-take-out h2::before {
@@ -980,6 +994,10 @@ h1 a {
 .p-eat-in h2 a {
   color: #EAEAEA;
   text-decoration: none;
+}
+
+.p-eat-in h2 a:hover {
+  color: #FFCC33;
 }
 
 .p-eat-in h2::before {
@@ -1207,6 +1225,11 @@ h1 a {
   }
 }
 
+.p-search-main-visual .p-search-burger-menu .p-search-menu_introduction .p-search-detail a:hover {
+  color: #000000;
+  background-color: #FFCC33;
+}
+
 .no-result {
   color: #3C2A10;
 }
@@ -1292,6 +1315,10 @@ h1 a {
   color: #707070;
 }
 
+.p-gmenu .add-class ul .menu-item-type-taxonomy > a:hover {
+  color: #CC9966;
+}
+
 .p-side-menu-logo {
   display: none;
 }
@@ -1315,6 +1342,10 @@ h1 a {
   .p-gmenu ul li a {
     font-size: 20px;
   }
+}
+
+.p-gmenu ul li a:hover {
+  color: #CC9966;
 }
 
 .is-open {
@@ -1410,7 +1441,7 @@ h1 a {
 }
 
 .l-single-main {
-  height: 1200px;
+  height: 1500px;
 }
 
 .l-single-main .p-single-main-visual {
@@ -2140,6 +2171,10 @@ h1 a {
 
 .p-footer__menu {
   padding: 40px 0 35px;
+}
+
+.p-gmenu {
+  padding-bottom: 100px;
 }
 
 @media (min-width: 600px) {

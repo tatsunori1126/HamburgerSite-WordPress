@@ -1,7 +1,7 @@
 @charset "UTF-8";
 .l-sidebar {
     display: block;
-    position: absolute;
+    position: fixed;
     height: 100vh;
     top: 0;
     left: 100%; //スマホ、タブレットの時はサイドメニューを画面外に表示させる
