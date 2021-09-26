@@ -5,6 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php wp_head(); ?> <!-- WordPressでは記入必須 -->
+    <!-- ここからアドミンバーが表示されている時だけサイドバーを32px下に下げるコード（スマホ、タブレットの画面の時に閉じるボタンがアドミンバーと被ってしまうため） -->
+    <?php if( is_user_logged_in() ) : ?>
+    <style type="text/css">
+        .l-sidebar {
+            margin-top: 32px;
+        }
+    </style>
+    <?php endif; ?>
+    <!-- ここまで -->
 </head>
 <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>

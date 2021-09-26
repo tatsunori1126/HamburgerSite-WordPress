@@ -248,7 +248,7 @@ body.is-fixed::before {
 .c-close__button {
   display: block;
   position: relative;
-  top: 80px;
+  top: 40px;
   text-align: right;
   cursor: pointer;
 }
@@ -1534,10 +1534,11 @@ h1 a {
 
 .l-page-main .p-page-menu-top .p-table-box table tbody tr td {
   border: 1px solid #707070;
+  white-space: nowrap;
 }
 
 .l-page-main .p-page-menu-top .p-table-box table tbody tr .has-text-align-left {
-  width: 70%;
+  width: 65%;
 }
 
 .l-page-main .p-page-menu-top .bold-text {
@@ -2518,7 +2519,7 @@ h1 a {
 }
 
 .l-page-main .p-table-box table tbody tr td span {
-  margin-left: 30px;
+  margin-left: 20px;
 }
 
 .l-page-main .bold-text {
